@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', cursive;
+  color: #f63636;
+  background-color: #292929;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.top_section {
+  width: 100vw;
+  height: 50vh;
+  background-color: #f63636;
+}
+
+.bottom_section {
+  width: 100vw;
+  background-color: #292929;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom_section #gradient {
+  width: 100vw;
+}
+
+.bottom_section .space {
+  width: 100vw;
+  height: 20vh;
+}
+
+.bottom_section .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom_section .media video {
+  width: 30vw;
+}
+
+.bottom_section .media img {
+  width: 30vw;
+}
+
+.bottom_section .media .post {
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+.bottom_section .social {
+  width: 75vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom_section .social .sociallink {
+  margin: auto;
+}
+
+.bottom_section .social .sociallink img {
+  width: 200px;
+}
+
+.bottom_section .content {
+  font-size: 0;
+  width: 100vw;
+}
+
+.bottom_section .content #tracklist {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  width: 100vw;
+}
+
+.content_venture {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content_venture .venture {
+  margin: auto;
+  display: block;
+  font-size: 50px;
+}
+
+.content_venture .venture img {
+  -webkit-box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  aspect-ratio: 1 / 1;
+  width: 30vw;
+  height: auto;
+}
+
+.content_venture .venture a {
+  color: #ffdcdc;
+}
+
+.content_venture .venture p {
+  line-height: 100px;
+  padding: 30px;
+}
+
+.daemonium_cover {
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  top: 25vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.daemonium_cover img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  width: 25%;
+  -webkit-box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+}
+
+.daemonium_cover p {
+  text-shadow: 2px 2px #292929;
+  line-height: 10px;
+  font-size: 30px;
+  color: #f63636;
+}
+
+.daemonium_cover p a {
+  color: #ffdcdc;
+}
+
+.daemonium_cover .daemonium_text {
+  font-size: 60px;
+}
+
+footer {
+  width: 100vw;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

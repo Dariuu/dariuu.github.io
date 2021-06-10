@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(246, 54, 54);  
+    background-color: rgb(41, 41, 41);
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.top_section{
+    width: 100vw;
+    height: 25vh;
+    background-color: rgb(246, 54, 54);
+}
+
+.bottom_section{
+    width: 100vw;
+    background-color: rgb(41, 41, 41);
+    padding: 0;
+    margin: 0;
+
+    .space {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .media{
+        display: block;
+        video{
+            width: 75vw;
+        }
+        img{
+            width: 75vw;
+        }
+        .post{
+            margin: auto;
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+
+    .social{
+        display: block;
+        .sociallink{
+            margin: auto;
+            text-align: center;
+            img{
+                width: 200px;
+            }
+        }
+    }
+
+    .content{
+        font-size: 0;
+        width: 100vw;
+        #tracklist{
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            width: 100vw;
+        }
+        
+    }
+}
+
+.content_venture{
+    width: 100vw;
+    display: block;
+    text-align: center;
+    margin: auto;
+    .venture{
+        width: 100vw;
+        display: block;
+        font-size: 40px;
+        img{
+            box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            width: 75%;
+        }
+        a{
+            color: rgb(255, 220, 220);
+        }
+        p{
+            line-height: 80px;
+            padding: 30px;
+        }
+    }
+    
+}
+
+.daemonium_cover{
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    text-align: center;
+    img{
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        width: 75%;
+        box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+    }
+    p{
+        line-height: 10px;
+        font-size: 30px;
+        color: rgb(246, 54, 54);  
+        a{
+            color: rgb(255, 220, 220);
+        }
+    }
+    .daemonium_text{
+        font-size: 60px;
+    }
+}
+
+footer{
+    width: 100vw;
+    text-align: center;
+}
