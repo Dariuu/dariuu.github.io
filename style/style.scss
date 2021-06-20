@@ -53,6 +53,8 @@ html, body {
         width: 75vw;
         margin: auto;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         .sociallink{
             margin: auto;
             img{
