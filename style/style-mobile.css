@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Bebas Neue', cursive;
-  color: #f63636;
-  background-color: #292929;
+  font-family: Laviossa;
+  color: #ffcdff;
+  background-color: #111111;
 }
 
 html, body {
@@ -14,12 +14,12 @@ html, body {
 .top_section {
   width: 100vw;
   height: 25vh;
-  background-color: #f63636;
+  background-color: #111111;
 }
 
 .bottom_section {
   width: 100vw;
-  background-color: #292929;
+  background-color: #111111;
   padding: 0;
   margin: 0;
 }
@@ -108,14 +108,14 @@ html, body {
 }
 
 .daemonium_cover {
-  font-family: 'Bebas Neue', cursive;
-  position: absolute;
-  top: 10vh;
-  width: 100vw;
+  font-family: Laviossa;
+  padding: 10px;
   text-align: center;
+  line-height: 40px;
 }
 
 .daemonium_cover img {
+  margin: 20px;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -127,9 +127,9 @@ html, body {
 }
 
 .daemonium_cover p {
-  line-height: 10px;
-  font-size: 30px;
-  color: #f63636;
+  line-height: 40px;
+  font-size: 20px;
+  color: #ffcdff;
 }
 
 .daemonium_cover p a {
@@ -137,7 +137,13 @@ html, body {
 }
 
 .daemonium_cover .daemonium_text {
-  font-size: 60px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+@font-face {
+  font-family: Laviossa;
+  src: url(/font/Laviossa-Medium.otf);
 }
 
 footer {
