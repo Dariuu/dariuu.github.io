@@ -26,7 +26,7 @@ html, body {
 
 .bottom_section .space {
   width: 100vw;
-  height: 70vh;
+  height: 10vh;
 }
 
 .bottom_section .media {
@@ -139,6 +139,11 @@ html, body {
 .daemonium_cover .daemonium_text {
   line-height: 40px;
   font-size: 30px;
+}
+
+.daemonium_cover #mv {
+  aspect-ratio: 16 / 9;
+  width: auto;
 }
 
 @font-face {
