@@ -84,7 +84,7 @@ html, body {
 .content_venture .venture {
   width: 100vw;
   display: block;
-  font-size: 40px;
+  font-size: 26px;
 }
 
 .content_venture .venture img {
@@ -103,7 +103,7 @@ html, body {
 }
 
 .content_venture .venture p {
-  line-height: 80px;
+  line-height: 40px;
   padding: 30px;
 }
 
