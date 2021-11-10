@@ -79,9 +79,12 @@ html, body {
 }
 
 .content_venture{
+    font-family: IBM;
     width: 100vw;
     display: flex;
     .venture{
+        padding: 50px;
+        z-index: 1;
         margin: auto;
         display: block;
         font-size: 50px;
@@ -100,17 +103,33 @@ html, body {
             color: rgb(255, 220, 220);
         }
         p{
-            line-height: 100px;
+            line-height: 50px;
             padding: 30px;
         }
     }
-    
+    .remix_detail{
+        position: absolute;
+        right: 10px;
+        transform: translateY(150px);
+        transform: rotate(25deg);
+        z-index: 0;
+        user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+    }
 }
 
 @font-face {
     font-family: Laviossa;
     src: url(/font/Laviossa-Medium.otf);
   }
+
+@font-face {
+font-family: IBM;
+src: url(/font/Flexi_IBM_VGA_True.ttf);
+}
 
 .daemonium_cover{
     font-family: Laviossa;

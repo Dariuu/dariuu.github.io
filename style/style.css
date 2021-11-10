@@ -96,6 +96,7 @@ html, body {
 }
 
 .content_venture {
+  font-family: IBM;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +104,8 @@ html, body {
 }
 
 .content_venture .venture {
+  padding: 50px;
+  z-index: 1;
   margin: auto;
   display: block;
   font-size: 50px;
@@ -126,13 +129,33 @@ html, body {
 }
 
 .content_venture .venture p {
-  line-height: 100px;
+  line-height: 50px;
   padding: 30px;
+}
+
+.content_venture .remix_detail {
+  position: absolute;
+  right: 10px;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  z-index: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @font-face {
   font-family: Laviossa;
   src: url(/font/Laviossa-Medium.otf);
+}
+
+@font-face {
+  font-family: IBM;
+  src: url(/font/Flexi_IBM_VGA_True.ttf);
 }
 
 .daemonium_cover {

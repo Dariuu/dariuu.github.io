@@ -70,14 +70,19 @@ html, body {
 }
 
 .content_venture{
+    
+    overflow: hidden;
     width: 100vw;
     display: block;
     text-align: center;
     margin: auto;
     .venture{
+        padding: 0;
+        position: relative;
+        z-index: 10;
         width: 100vw;
         display: block;
-        font-size: 26px;
+        font-size: 35px;
         img{
             box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
             user-select: none;
@@ -94,6 +99,17 @@ html, body {
             line-height: 40px;
             padding: 30px;
         }
+    }
+    .remix_detail{
+        z-index: 1;
+        position: absolute;
+        left: 265px;
+        transform: rotate(275deg) translateY(-612px) translateX(380px);
+        user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
     }
     
 }

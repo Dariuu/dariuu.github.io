@@ -75,6 +75,7 @@ html, body {
 }
 
 .content_venture {
+  overflow: hidden;
   width: 100vw;
   display: block;
   text-align: center;
@@ -82,9 +83,12 @@ html, body {
 }
 
 .content_venture .venture {
+  padding: 0;
+  position: relative;
+  z-index: 10;
   width: 100vw;
   display: block;
-  font-size: 26px;
+  font-size: 35px;
 }
 
 .content_venture .venture img {
@@ -105,6 +109,19 @@ html, body {
 .content_venture .venture p {
   line-height: 40px;
   padding: 30px;
+}
+
+.content_venture .remix_detail {
+  z-index: 1;
+  position: absolute;
+  left: 265px;
+  -webkit-transform: rotate(275deg) translateY(-612px) translateX(380px);
+          transform: rotate(275deg) translateY(-612px) translateX(380px);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .daemonium_cover {
