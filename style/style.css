@@ -1,9 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Laviossa;
+  font-family: IBM;
   color: #ffcdff;
   background-color: #111111;
+}
+
+body #texture_overlay {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  width: 100vw;
+  background-image: url(images/IMG_20220103_164628.jpg);
+  mix-blend-mode: overlay;
+  background-repeat: repeat-y;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -34,6 +45,8 @@ html, body {
 }
 
 .bottom_section .media {
+  z-index: 2;
+  font-family: IBM;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,17 +59,26 @@ html, body {
 }
 
 .bottom_section .media video {
+  z-index: 2;
   width: 30vw;
+  border-radius: 8px;
 }
 
 .bottom_section .media img {
+  z-index: 2;
   width: 30vw;
+  border-radius: 8px;
 }
 
 .bottom_section .media .post {
+  z-index: 2;
   margin: auto;
   text-align: center;
   font-size: 30px;
+}
+
+.bottom_section .media a {
+  color: #ffcdff;
 }
 
 .bottom_section .social {
@@ -96,6 +118,9 @@ html, body {
 }
 
 .content_venture {
+  background-color: rgba(47, 99, 70, 0.336);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(47, 99, 70, 0.336);
+          box-shadow: 0px 0px 10px 10px rgba(47, 99, 70, 0.336);
   font-family: IBM;
   width: 100vw;
   display: -webkit-box;
@@ -104,6 +129,7 @@ html, body {
 }
 
 .content_venture .venture {
+  color: RGB(108, 174, 103);
   padding: 50px;
   z-index: 1;
   margin: auto;
@@ -124,6 +150,24 @@ html, body {
   height: auto;
 }
 
+.content_venture .venture .venture_cover_video {
+  -webkit-box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  aspect-ratio: 1 / 1;
+  width: 30vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px -100px;
+     object-position: 0px -100px;
+  border-radius: 8px;
+}
+
 .content_venture .venture a {
   color: #ffdcdc;
 }
@@ -134,12 +178,14 @@ html, body {
 }
 
 .content_venture .remix_detail {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  mix-blend-mode: overlay;
   position: absolute;
-  right: 10px;
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  width: 1000px;
+  right: 50px;
+  -webkit-transform: translateY(-122px) rotate(359deg);
+          transform: translateY(-122px) rotate(359deg);
   z-index: 0;
   user-select: none;
   -moz-user-select: none;
@@ -159,7 +205,8 @@ html, body {
 }
 
 .daemonium_cover {
-  font-family: Laviossa;
+  z-index: 3;
+  font-family: IBM;
   padding: 80px;
   text-align: center;
 }
@@ -173,16 +220,19 @@ html, body {
   width: 25%;
   -webkit-box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 28px 26px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 }
 
 .daemonium_cover p {
+  z-index: 3;
   text-shadow: 2px 2px #292929;
   line-height: 10px;
-  font-size: 30px;
+  font-size: 40px;
   color: #ffcdff;
 }
 
 .daemonium_cover p a {
+  z-index: 3;
   color: #ff76d1;
 }
 
@@ -196,6 +246,7 @@ html, body {
 }
 
 footer {
+  font-size: 20px;
   width: 100vw;
   text-align: center;
 }
