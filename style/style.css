@@ -12,7 +12,7 @@ body #texture_overlay {
   position: absolute;
   width: 100vw;
   background-image: url(images/IMG_20220103_164628.jpg);
-  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
   background-repeat: repeat-y;
   overflow-x: hidden;
 }
@@ -241,6 +241,7 @@ html, body {
 }
 
 .daemonium_cover #mv {
+  z-index: 3;
   aspect-ratio: 16 / 9;
   height: auto;
 }

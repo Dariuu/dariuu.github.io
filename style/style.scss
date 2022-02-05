@@ -18,7 +18,7 @@ body{
         //     mix-blend-mode: overlay;
         // }
         background-image: url(images/IMG_20220103_164628.jpg);
-        mix-blend-mode: overlay;
+        mix-blend-mode: soft-light;
         background-repeat: repeat-y;
         overflow-x: hidden;
     }
@@ -211,6 +211,7 @@ src: url(/font/Flexi_IBM_VGA_True.ttf);
         font-size: 60px;
     }
     #mv{
+        z-index: 3;
         aspect-ratio: 16 / 9;
         height: auto;
     }
