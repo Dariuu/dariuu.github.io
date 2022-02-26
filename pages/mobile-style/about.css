@@ -201,7 +201,10 @@ footer {
 
 @font-face {
   font-family: Accidental Presidency;
-  src: url(/fonts/ACCID__.TTF) format("truetype");
+  src: url("/fonts/accid__-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg");
+  /* Legacy iOS */
 }
 
 body::-webkit-scrollbar {

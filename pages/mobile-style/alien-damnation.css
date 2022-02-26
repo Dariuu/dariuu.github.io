@@ -357,12 +357,18 @@ footer {
 
 @font-face {
   font-family: Accidental Presidency;
-  src: url(/fonts/ACCID__.TTF) format("truetype");
+  src: url("/fonts/accid__-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg");
+  /* Legacy iOS */
 }
 
 @font-face {
   font-family: Laviossa;
-  src: url(/fonts/LAVIOSSA-MEDIUM_0.OTF) format("opentype");
+  src: url("/fonts/laviossa-medium_0-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg");
+  /* Legacy iOS */
 }
 
 body::-webkit-scrollbar {
