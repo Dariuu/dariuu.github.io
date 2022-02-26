@@ -300,12 +300,12 @@ footer{
 
 @font-face{
     font-family: Accidental Presidency;
-    src: url(/fonts/ACCID__.TTF);
+    src: url(/fonts/ACCID__.TTF) format("truetype");
 }
 
 @font-face{
     font-family: Laviossa;
-    src: url(/fonts/LAVIOSSA-MEDIUM_0.OTF);
+    src: url(/fonts/LAVIOSSA-MEDIUM_0.OTF) format("opentype");
 }
 
 body::-webkit-scrollbar {
