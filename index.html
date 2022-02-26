@@ -4,105 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" media="all and (max-device-width: 1000px)" href="style/style-mobile.css">
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="images/stardust ico.png">
-    <title>dariuu</title>
+    <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="pages/styles/style.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1023px)" href="pages/mobile-style/style.css">
+    <link rel="shortcut icon" href="media/D2.png" type="image/x-icon">
+    <title>DARIUU</title>
 </head>
 <body>
-    <div id="texture_overlay">
-        <img id="overlay" src="images/IMG_20220103_164628.jpg" alt="">
+
+    <header id="header-desktop">
+        <img id="dariuulogo" src="media/DARIUU.png" alt="dariuu logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="pages/about.html">ABOUT</a></li>
+            <li><a onclick="dropdown()" class="dropbtn" href="javascript:void(0);">MUSIC</a></li>
+        </ul>
+    </header>
+    <header id="header-mobile">
+        <img id="dariuulogo" src="media/DARIUU.png" alt="dariuu logo">
+        <ul>
+            <li><a style="text-decoration: none;" onclick="dropdownMobile()" class="dropbtn" href="javascript:void(0);">&nbsp;<img style="filter: invert(1);" src="/media/menu.png" alt="">&nbsp;</a></li>
+        </ul>
+    </header>
+
+    <div id="music_panel" class="musicPanel">
+        <ul>
+            <li>DARIUU'S DISCOGRAPY</li>
+            <li><a href="pages/stardust.html">stardust</a></li>
+            <li><a href="pages/daemonium.html">DÆMONIUM</a></li>
+            <li><a href="pages/alien-damnation.html">Alien Damnation</a></li>
+        </ul>
     </div>
 
-    <div class="daemonium_cover">
-        <img  src="images/jsut checking up on you3 smaller.jpg" alt="">
-        <p>Hey, I'm...</p>
-        <p class="daemonium_text" style="font-family: Laviossa;"> just checking up on you </p>
-        <p>OUT NOW</p>
-        <p><a href="https://ditto.fm/just-checking-up-on-you">> Listen Now <</a></p>
-        <iframe id="mv" width="560" height="315" src="https://www.youtube.com/embed/5U8sdVZ0fg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="music_panelmobile" class="musicPanelmobile">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/pages/about.html">ABOUT</a></li>
+            <li><a href="/pages/stardust.html">stardust</a></li>
+            <li><a href="/pages/daemonium.html">DÆMONIUM</a></li>
+            <li><a href="/pages/alien-damnation.html">Alien Damnation</a></li>
+        </ul>
+    </div>
+
+    <div id="banner">
+        <img src="media/Spotify Banner 1.png" alt="dariuu stardust banner">
+    </div>
+
+    <div id="featured">
+        <h3>LATEST RELEASE</h3>
+        
+        <a href="pages/stardust.html">
+            <div id="news">
+                <img src="media/jsut checking up on you3 smaller 1.png" alt="">
+                <div id="description">
+                    <p>04/01/2022</p>
+                    <h1>'just checking up on you' OUT NOW!</h2>
+                    <h2>My new single ‘just checking up on you’ is now available everywhere for everyone to listen!</h1>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    <div id="linkscontainer">
+        <div id="links">
+            <ul>
+                <li style="font-size: 36px;line-height: 42px;">Links</li>
+                <li><a href="https://twitter.com/_dariuu_">Twitter</a></li>
+                <li><a href="https://www.instagram.com/_dariuu_/">Instagram</a></li>
+                <li><a href="https://www.facebook.com/dariuuofficial/">Facebook</a></li>
+                <li><a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=t0oyFdIHQbeubRn17qweHA">Spotify</a></li>
+                <li><a href="https://music.apple.com/us/artist/dariuu/1556086006">Apple Music</a></li>
+                <li><a href="https://www.youtube.com/channel/UC9z13fJV0wvqRpKahNUJZmw">YouTube</a></li>
+                <li><a href="https://soundcloud.com/dariuuofficial">Soundcloud</a></li>
+            </ul>
+        </div>
+        <div id="linksicon">
+            <ul id="linkicon">
+                <li></li>
+                <li><a href="https://twitter.com/_dariuu_"><p><img  src="media/twitter.png" alt=""></p></a></li>
+                <li><a href="https://www.instagram.com/_dariuu_/"><p><img  src="media/instagram.png" alt=""></p></a></li>
+                <li><a href="https://www.facebook.com/dariuuofficial/"><p><img  src="media/facebook.png" alt=""></p></a></li>
+                <li><a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=t0oyFdIHQbeubRn17qweHA"><p><img  src="media/Group 1.png" alt=""></p></a></li>
+                <li><a href="https://music.apple.com/us/artist/dariuu/1556086006"><p><img  src="media/music.png" alt=""></p></a></li>
+                <li><a href="https://www.youtube.com/channel/UC9z13fJV0wvqRpKahNUJZmw"><p><img  src="media/youtube.png" alt=""></p></a></li>
+                <li><a href="https://soundcloud.com/dariuuofficial"><p><img  src="media/soundcloud.png" alt=""></p></a></li>
+            </ul>
+        </div>
     </div>
     
-    <!-- <section class="top_section">
+
+    <div id="artgallery">
+        <div id="gallery">
+            <div id="arts">
+                <p>>// ART_GALLERY</p>
+                <img src="media/ART.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="artgallery-mobile">
+        <div id="gallery">
+            <div id="arts">
+                <p>>// ART_GALLERY</p>
+                <img src="media/ART2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="linkscontainer-mobile">
+        <div id="links">
+            <p style="font-size: 36px;line-height: 42px;">Links</p>
+            <ul>
+                <li><a href="https://twitter.com/_dariuu_"><p>Twitter<img  src="/media/twitter.png" alt=""></p></a></li>
+                <li><a href="https://www.instagram.com/_dariuu_/"><p>Instagram<img  src="/media/instagram.png" alt=""></p></a></li>
+                <li><a href="https://www.facebook.com/dariuuofficial/"><p>Facebook<img  src="/media/facebook.png" alt=""></p></a></li>
+                <li><a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=t0oyFdIHQbeubRn17qweHA"><p>Spotify<img  src="/media/Group 1.png" alt=""></p></a></li>
+                <li><a href="https://music.apple.com/us/artist/dariuu/1556086006"><p>Apple Music<img  src="/media/music.png" alt=""></p></a></li>
+                <li><a href="https://www.youtube.com/channel/UC9z13fJV0wvqRpKahNUJZmw"><p>YouTube<img  src="/media/youtube.png" alt=""></p></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>DARIUU 2022</p>
+        <p>Contact: dariuuinfo@gmail.com</p>
+    </footer>
+
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function dropdown() {
+          document.getElementById("music_panel").classList.toggle("show");
+        }
         
-    </section> -->
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("musicPanel");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
 
-    <section class="bottom_section">
+        function dropdownMobile() {
+          document.getElementById("music_panelmobile").classList.toggle("show");
+        }
         
-        <div class="space"></div>
-        <div class="space"></div>
-        <div class="content_venture">
-            <div class="venture">
-                <!-- <a href="https://www.instagram.com/p/CYeGv8FsMW2/?utm_source=ig_web_copy_link"><img class="venture_cover" src="images/jcuoy promo 2.jpg" alt=""></a> -->
-                <a href="https://www.instagram.com/p/CYeGv8FsMW2/?utm_source=ig_web_copy_link"><video class="venture_cover_video" src="images/just checking up on you Canvas.mov" autoplay loop></video></a>
-            </div>
-            <div class="venture">
-                <h3>Are you ok?</h3>
-                <p>we haven't talked in quite a while...</br>
-                </br>
-                    Please answer...</br>
-                </p>
-            </div>
-            
-            <img class="remix_detail" src="images/just checking up on you.png" alt="">
-        </div>
-        <div class="space"></div>
-        <div class="space"></div>
-        <div class="media">
-            <!-- <div class="post">
-                <video src="video" controls></video>
-                <p>text</p>
-            </div> -->
-            
-            <!-- <div class="post">
-                <img src="image" alt="">
-                <p>text</p>
-            </div> -->
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("musicPanelmobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 
-            <div class="post">
-                <img src="images/jcuoy  promo 1.2@0.5x.png" alt="">
-                <a href="https://www.instagram.com/p/CYOxq_kMMDC/?utm_source=ig_web_copy_link"><p>please answer</p></a>
-            </div>
 
-            <div class="post">
-                <video src="images/jcuoy promo 6.2.mp4" controls></video>
-                <a href="https://www.instagram.com/tv/CYbuBYxof-k/?utm_source=ig_web_copy_link"><p>teaser</p></a>
-            </div>
 
-            <div class="post">
-                <img src="images/jcuoy  promo 3.1.png" alt="">
-                <a href="https://www.instagram.com/p/CYUAVy-sWX_/?utm_source=ig_web_copy_link"><p>check up on them</p></a>
-            </div>
-        </div>
-        <div class="social">
-            <div class="sociallink">
-                <a href="https://twitter.com/_dariuu_"><img src="images/twitter-icon-18-256.png" style="filter: invert(0);" alt=""></a>
-            </div>
-
-            <div class="sociallink">
-                <a href="https://www.instagram.com/_dariuu_/"><img src="images/new-instagram-logo-white-border-icon-png-large.png" style="filter: invert(0);" alt=""></a>
-            </div>
-
-            <div class="sociallink">
-                <a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=yQwROfiCR1W-ryqjbxjSqg"><img src="images/image_icon_spotify_pic_512x512.png" style="filter: invert(1);" alt=""></a>
-            </div>
-
-            <div class="sociallink">
-                <a href="https://music.apple.com/us/artist/dariuu/1556086006"><img src="images/apple-music-2749229-2284619.webp" style="filter: invert(1);" alt=""></a>
-            </div>
-        </div>
-        <footer>
-            <p>&nbsp;</p>
-            <p>Contact: dariuuinfo@gmail.com</p>
-            <p>© Dariuu 2022</p>
-        </footer>
-    </section>
-    
-    
 </body>
 </html>

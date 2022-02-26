@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="styles/about.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1023px)" href="mobile-style/about.css">
+    <link rel="shortcut icon" href="/media/D2.png" type="image/x-icon">
+    <title>DARIUU</title>
+</head>
+<body>
+
+    <header id="header-desktop">
+        <img id="dariuulogo" src="/media/DARIUU.png" alt="dariuu logo">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a onclick="dropdown()" class="dropbtn" href="javascript:void(0);">MUSIC</a></li>
+        </ul>
+    </header>
+    <header id="header-mobile">
+        <img id="dariuulogo" src="/media/DARIUU.png" alt="dariuu logo">
+        <ul>
+            <li><a style="text-decoration: none;" onclick="dropdownMobile()" class="dropbtn" href="javascript:void(0);">&nbsp;<img style="filter: invert(1);" src="/media/menu.png" alt="">&nbsp;</a></li>
+        </ul>
+    </header>
+
+    <div id="music_panel" class="musicPanel">
+        <ul>
+            <li>DARIUU'S DISCOGRAPY</li>
+            <li><a href="stardust.html">stardust</a></li>
+            <li><a href="daemonium.html">DÆMONIUM</a></li>
+            <li><a href="alien-damnation.html">Alien Damnation</a></li>
+        </ul>
+    </div>
+
+    <div id="music_panelmobile" class="musicPanelmobile">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="stardust.html">stardust</a></li>
+            <li><a href="daemonium.html">DÆMONIUM</a></li>
+            <li><a href="alien-damnation.html">Alien Damnation</a></li>
+        </ul>
+    </div>
+
+    <div id="banner">
+        <img src="/media/transition 2.png" alt="">
+    </div>
+
+    <div id="about">
+        <h1>ABOUT DARIUU</h1>
+        <p>Hello! <br><br>
+
+            My name is Darius also known as Dariuu. I am an independent musical artist. I've always loved making art, any kind of art, painting, designing, writing, musical things and others! I've always wanted to make music since I was very young. I remember always being interested in music, always singing some melody in my head, always pretending that I'm playing an instument. Even without any musical preparation, there was always music in me and I loved it.
+            <br><br>
+            And one day, I decided that I was finally going to start making some music of my own, as I had always wanted. I didn't have any real instruments or any kind of experience, I only had my computer and the Internet.  And that's how my adventure started.
+            <br><br>
+            It was a frustating and hard adventure but because I just loved it so much I continued and I finally created and realeased my first singles <a href="alien-damnation.html">'Let's Go!'</a> and <a href="alien-damnation.html">'Adventure'</a> and a month later released my first album <a href="alien-damnation.html">'Alien Damnation'</a>  on April 15th.
+            <br><br>
+            After this exhaushing weird alien adventure I took somewhat of a break from electronic experimental music and quite bizzarely started making lo-fi type music. I was in love with the vibes I was creating and I couldn't stop making tracks. I even started experimenting with adding small bits of me talking in there to add some kind of meaning and uniqness to each song. The first track I made was called <a href="stardust.html">'will you come with me?'</a>  and this song along with <a href="stardust.html">'just checking up on you'</a>  became the focus of my upcoming album, <a href="stardust.html">'stardust'</a>.
+
+        </p>
+        <img src="/media/photo_1 1.png" alt="">
+        
+    </div>
+
+    <div id="linkscontainer">
+        <div id="links">
+            <p style="font-size: 36px;line-height: 42px;">Links</p>
+            <ul>
+                <li><a href="https://twitter.com/_dariuu_"><p>Twitter<img  src="/media/twitter.png" alt=""></p></a></li>
+                <li><a href="https://www.instagram.com/_dariuu_/"><p>Instagram<img  src="/media/instagram.png" alt=""></p></a></li>
+                <li><a href="https://www.facebook.com/dariuuofficial/"><p>Facebook<img  src="/media/facebook.png" alt=""></p></a></li>
+                <li><a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=t0oyFdIHQbeubRn17qweHA"><p>Spotify<img  src="/media/Group 1.png" alt=""></p></a></li>
+                <li><a href="https://music.apple.com/us/artist/dariuu/1556086006"><p>Apple Music<img  src="/media/music.png" alt=""></p></a></li>
+                <li><a href="https://www.youtube.com/channel/UC9z13fJV0wvqRpKahNUJZmw"><p>YouTube<img  src="/media/youtube.png" alt=""></p></a></li>
+                <li><a href="https://soundcloud.com/dariuuofficial"><p>Soundcloud<img  src="/media/soundcloud.png" alt=""></p></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>DARIUU 2022</p>
+        <p>Contact: dariuuinfo@gmail.com</p>
+    </footer>
+
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function dropdown() {
+          document.getElementById("music_panel").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("musicPanel");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+
+        function dropdownMobile() {
+          document.getElementById("music_panelmobile").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("musicPanelmobile");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+
+
+
+</body>
+</html>
