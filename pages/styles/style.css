@@ -115,6 +115,10 @@ body {
   height: 489px;
 }
 
+#featured img {
+  width: 40%;
+}
+
 #featured a {
   color: #EBEBEB;
 }
