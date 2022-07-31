@@ -17,31 +17,23 @@ body {
   width: 100vw;
   height: 86px;
   background-color: #902337;
-  -webkit-box-shadow: 0px 5px 5px #902337;
-          box-shadow: 0px 5px 5px #902337;
+  box-shadow: 0px 5px 5px #902337;
 }
-
 #header-mobile #dariuulogo {
   position: absolute;
   left: 28px;
   top: 17px;
   -webkit-user-drag: none;
 }
-
 #header-mobile ul {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   right: 10px;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
-
 #header-mobile ul li {
   font-family: Accidental Presidency;
   font-style: normal;
@@ -50,7 +42,6 @@ body {
   line-height: 42px;
   padding: 0px 50px;
 }
-
 #header-mobile ul a {
   color: #FFFFFF;
 }
@@ -62,14 +53,12 @@ body {
   border-bottom-left-radius: 10px;
   background-color: rgba(43, 43, 43, 0.624);
 }
-
 .musicPanelmobile ul li {
   padding: 10px 50px;
   list-style-type: none;
   font-size: 36px;
   text-align: right;
 }
-
 .musicPanelmobile ul li a {
   color: #EBEBEB;
 }
@@ -81,14 +70,12 @@ body {
   border-bottom-left-radius: 10px;
   background-color: rgba(43, 43, 43, 0.624);
 }
-
 .musicPanel ul li {
   padding: 10px 50px;
   list-style-type: none;
   font-size: 36px;
   text-align: right;
 }
-
 .musicPanel ul li a {
   color: #EBEBEB;
 }
@@ -98,11 +85,8 @@ body {
 }
 
 #banner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #banner img {
   width: 100vw;
   height: 178px;
@@ -114,22 +98,12 @@ body {
   text-align: center;
   margin: 5px;
 }
-
 #linkscontainer #links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 #linkscontainer #links ul li {
   display: inline;
   padding: 0px 20px;
@@ -138,44 +112,30 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #EBEBEB;
 }
-
 #linkscontainer #links ul li a {
   color: #EBEBEB;
 }
 
 #welcome h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   font-family: Laviossa;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: -0.09em;
 }
-
 #welcome img {
   -webkit-user-drag: none;
 }
-
 #welcome h2 {
   padding: 0px 0px 50px 0px;
   width: 90vw;
@@ -185,9 +145,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: -0.01em;
 }
@@ -195,40 +153,28 @@ body {
 #album {
   width: 100vw;
   padding: 10px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 #album #desktop {
   display: none;
   width: 80%;
 }
-
 #album #mobile {
   display: block;
   width: 80%;
 }
-
 #album #text {
   font-family: Laviossa;
   text-align: center;
   padding: 15px;
 }
-
 #album #text h2 {
   font-size: 36px;
   color: #FFFFFF;
 }
-
 #album #text a {
   color: #FFFFFF;
 }
@@ -241,12 +187,8 @@ body {
   display: block;
   width: 90vw;
   height: 25vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 10px 0px;
   margin: auto;
 }
@@ -256,53 +198,38 @@ body {
   font-family: Laviossa;
   background: #49464B;
 }
-
 #singles #single {
   margin: auto;
   width: 90vw;
   padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 }
-
 #singles #single #description {
   text-align: center;
 }
-
 #singles #single #description img {
   width: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 #singles #single #description #text {
   margin: auto;
   width: 80%;
   padding: 10px;
 }
-
 #singles #single #description #text h2 {
   font-size: 24px;
   margin: 0px;
 }
-
 #singles #single #description #text h3 {
   font-size: 24px;
   margin: 10px 0px;
 }
-
 #singles #single #description #text a {
   color: #FFFFFF;
 }
-
 #singles #single #video {
   margin: auto;
   width: 80%;
@@ -311,21 +238,12 @@ body {
 
 #posters {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px 0px;
 }
-
 #posters img {
   width: 80%;
   -o-object-fit: contain;
@@ -335,41 +253,29 @@ body {
 
 footer {
   font-size: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 
 @font-face {
   font-family: Accidental Presidency;
-  src: url("/fonts/accid__-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg");
-  /* Legacy iOS */
+  src: url("/fonts/accid__-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg"); /* Legacy iOS */
 }
-
 @font-face {
   font-family: Laviossa;
-  src: url("/fonts/laviossa-medium_0-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg");
-  /* Legacy iOS */
+  src: url("/fonts/laviossa-medium_0-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg"); /* Legacy iOS */
 }
-
 body::-webkit-scrollbar {
-  width: 15px;
-  /* width of the entire scrollbar */
+  width: 15px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #270411;
-  /* color of the tracking area */
+  background: rgb(39, 4, 17); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #6e2b47;
-  /* color of the scroll thumb */
+  background-color: rgb(110, 43, 71); /* color of the scroll thumb */
   width: 15px;
-}
-/*# sourceMappingURL=starduststyle.css.map */
+}/*# sourceMappingURL=starduststyle.css.map */

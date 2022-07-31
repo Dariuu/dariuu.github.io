@@ -2,31 +2,23 @@ header {
   width: 100vw;
   height: 86px;
   background-color: #902437;
-  -webkit-box-shadow: 0px 5px 5px #902437;
-          box-shadow: 0px 5px 5px #902437;
+  box-shadow: 0px 5px 5px #902437;
 }
-
 header #dariuulogo {
   position: absolute;
   left: 28px;
   top: 15px;
   -webkit-user-drag: none;
 }
-
 header ul {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   right: 50px;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
-
 header ul li {
   font-family: Accidental Presidency;
   font-style: normal;
@@ -35,7 +27,6 @@ header ul li {
   line-height: 42px;
   padding: 0px 50px;
 }
-
 header ul a {
   color: #FFFFFF;
 }
@@ -55,31 +46,23 @@ body {
   width: 100vw;
   height: 86px;
   background-color: #902337;
-  -webkit-box-shadow: 0px 5px 5px #902337;
-          box-shadow: 0px 5px 5px #902337;
+  box-shadow: 0px 5px 5px #902337;
 }
-
 #header-desktop #dariuulogo {
   position: absolute;
   left: 28px;
   top: 25px;
   -webkit-user-drag: none;
 }
-
 #header-desktop ul {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   right: 50px;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #FFFFFF;
 }
-
 #header-desktop ul li {
   font-family: Accidental Presidency;
   font-style: normal;
@@ -88,7 +71,6 @@ body {
   line-height: 42px;
   padding: 0px 50px;
 }
-
 #header-desktop ul a {
   color: #FFFFFF;
 }
@@ -104,14 +86,12 @@ body {
   border-bottom-left-radius: 10px;
   background-color: rgba(43, 43, 43, 0.624);
 }
-
 .musicPanel ul li {
   padding: 10px 50px;
   list-style-type: none;
   font-size: 36px;
   text-align: right;
 }
-
 .musicPanel ul li a {
   color: #EBEBEB;
 }
@@ -123,14 +103,12 @@ body {
   border-bottom-left-radius: 10px;
   background-color: rgba(43, 43, 43, 0.624);
 }
-
 .musicPanelmobile ul li {
   padding: 10px 50px;
   list-style-type: none;
   font-size: 36px;
   text-align: right;
 }
-
 .musicPanelmobile ul li a {
   color: #EBEBEB;
 }
@@ -140,11 +118,8 @@ body {
 }
 
 #banner {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #banner img {
   width: 100vw;
   height: 448px;
@@ -156,22 +131,12 @@ body {
   text-align: center;
   margin: 5px;
 }
-
 #linkscontainer #links ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 #linkscontainer #links ul li {
   display: inline;
   padding: 0px 20px;
@@ -180,44 +145,30 @@ body {
   font-weight: normal;
   font-size: 24px;
   line-height: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   color: #EBEBEB;
 }
-
 #linkscontainer #links ul li a {
   color: #EBEBEB;
 }
 
 #welcome h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   font-family: Laviossa;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 75px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: -0.09em;
 }
-
 #welcome img {
   -webkit-user-drag: none;
 }
-
 #welcome h2 {
   padding: 0px 0px 50px 0px;
   width: 70vw;
@@ -227,9 +178,7 @@ body {
   font-weight: 500;
   font-size: 24px;
   line-height: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: -0.01em;
 }
@@ -237,52 +186,36 @@ body {
 #album {
   width: 100vw;
   padding: 60px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-
 #album #desktop {
   display: block;
   width: 80%;
 }
-
 #album #mobile {
   display: none;
   width: 80%;
 }
-
 #album #text {
   font-family: Laviossa;
   text-align: left;
   padding: 15px;
 }
-
 #album #text h2 {
   font-size: 48px;
   color: #FFFFFF;
 }
-
 #album #text a {
   color: #FFFFFF;
 }
 
 #albumVideoDesktop {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 30px 0px;
 }
 
@@ -295,89 +228,55 @@ body {
   font-family: Laviossa;
   background: #49464B;
 }
-
 #singles #single {
   margin: auto;
   width: 90vw;
   padding: 20px 0px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 50%;
-      grid-template-columns: 25% 25% 50%;
+  grid-template-columns: 25% 25% 50%;
 }
-
 #singles #single #description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-grid-row: 1;
-  grid-area: 1 / span 2;
+  flex-direction: row;
+  grid-area: 1/span 2;
 }
-
 #singles #single #description img {
   width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
 #singles #single #description #text {
   width: 80%;
-  -ms-grid-row: 2;
   grid-area: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 10px;
 }
-
 #singles #single #description #text h2 {
   font-size: 36px;
   margin: 0px;
 }
-
 #singles #single #description #text h3 {
   font-size: 24px;
   margin: 10px 0px;
 }
-
 #singles #single #description #text a {
   color: #FFFFFF;
 }
-
 #singles #single #video {
   width: 100%;
-  -ms-grid-row: 1;
-  grid-area: 1 / span 3;
+  grid-area: 1/span 3;
 }
 
 #posters {
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 20px 0px;
 }
-
 #posters img {
   width: 40%;
   -o-object-fit: contain;
@@ -387,41 +286,29 @@ body {
 
 footer {
   font-size: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 
 @font-face {
   font-family: Accidental Presidency;
-  src: url("/fonts/accid__-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg");
-  /* Legacy iOS */
+  src: url("/fonts/accid__-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg"); /* Legacy iOS */
 }
-
 @font-face {
   font-family: Laviossa;
-  src: url("/fonts/laviossa-medium_0-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg");
-  /* Legacy iOS */
+  src: url("/fonts/laviossa-medium_0-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg"); /* Legacy iOS */
 }
-
 body::-webkit-scrollbar {
-  width: 15px;
-  /* width of the entire scrollbar */
+  width: 15px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #270411;
-  /* color of the tracking area */
+  background: rgb(39, 4, 17); /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #6e2b47;
-  /* color of the scroll thumb */
+  background-color: rgb(110, 43, 71); /* color of the scroll thumb */
   width: 15px;
-}
-/*# sourceMappingURL=starduststyle.css.map */
+}/*# sourceMappingURL=starduststyle.css.map */
