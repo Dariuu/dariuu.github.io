@@ -85,13 +85,7 @@ body {
 }
 
 #banner {
-  align-items: center;
-}
-#banner img {
-  width: 100vw;
-  height: 448px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: none;
 }
 
 #linkscontainer {
@@ -123,6 +117,17 @@ body {
   color: #EBEBEB;
 }
 
+#welcome {
+  width: 100vw;
+  height: 500px;
+  background-image: url(/media/ALIEN\ DAMNATION\ 5\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2E2B22;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 #welcome h1 {
   margin: 0px;
   padding: 10px;

@@ -85,14 +85,7 @@ body {
 }
 
 #banner {
-  background-color: #2E2B22;
-  align-items: center;
-}
-#banner img {
-  width: 100vw;
-  height: 448px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  display: none;
 }
 
 #linkscontainer {
@@ -125,16 +118,23 @@ body {
 }
 
 #welcome {
+  width: 100vw;
+  height: 700px;
+  background-image: url(/media/pretty\ dark\ header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #2E2B22;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 #welcome h1 {
   margin: 0px;
   padding: 10px;
-  background-color: #2E2B22;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: IM_FELL;
+  font-family: IM_FELL_DPICA;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -144,15 +144,13 @@ body {
   letter-spacing: -0.09em;
 }
 #welcome img {
-  background-color: #2E2B22;
   -webkit-user-drag: none;
 }
 #welcome h2 {
-  background-color: #2E2B22;
   padding: 0px 0px 50px 0px;
   width: 70vw;
   margin: auto;
-  font-family: IM_FELL;
+  font-family: IM_FELL_DPICA;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -243,6 +241,11 @@ footer {
   font-family: IM_FELL;
   src: url("/fonts/FePirm2.eot"); /* IE9 Compat Modes */
   src: url("/fonts/FePirm2.eot?#iefix") format("embedded-opentype"), url("/fonts/fepirm2-webfont.woff2") format("woff2"), url("/fonts/fepirm2-webfont.woff") format("woff"), url("/fonts/fepirm2-webfont.ttf") format("truetype"), url("/fonts/FePirm2.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: IM_FELL_DPICA;
+  src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot?#iefix") format("embedded-opentype"), url("/fonts/fedpsc2-webfont.woff2") format("woff2"), url("/fonts/fedpsc2-webfont.woff") format("woff"), url("/fonts/FeDPsc2.ttf") format("truetype"), url("/fonts/IM_FELL_Double_Pica_Roman_SC.svg") format("svg"); /* Legacy iOS */
 }
 body::-webkit-scrollbar {
   width: 15px; /* width of the entire scrollbar */
