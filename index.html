@@ -13,11 +13,17 @@
 
     <div id="dariuu">
         <div>
-            <img src="/media/Dariuu Logo white big.png" alt="">
+            <img id="logo" src="/media/Dariuu Logo white big.png" alt="">
         </div>
     </div>
 
     <div class="albums">
+        <div id="album">
+            <a href="/pages/bedroom-music.html">
+                <img src="/media/bedroom music cover 1 2.png" alt="Dariuu Bedroom Music EP Cover">
+            </a>
+            <a href="/pages/its-pretty-dark.html">Bedroom Music - EP</a>
+        </div>
         <div id="album">
             <a href="/pages/its-pretty-dark.html">
                 <img src="/media/its pretty dark cover 2.png" alt="Dariuu It's Pretty Dark Single Cover">
@@ -68,7 +74,14 @@
         <p>Contact: dariuuinfo@gmail.com</p>
     </footer>
 
-
+<script type="text/javascript">
+    let image = document.getElementById('logo');
+    let images = ['/media/Logos/dariuu main 1.png', '/media/Logos/dariuu main 2.png', '/media/Logos/dariuu main 3.png','/media/Logos/dariuu main 4.png', '/media/Logos/dariuu main 5.png', '/media/Logos/dariuu main 6.png'];
+    setInterval(function(){
+        let random = Math.floor(Math.random() * 6);
+        image.src = images[random];
+    }, 1000);
+</script>
 
 </body>
 </html>

@@ -1,0 +1,391 @@
+#header-desktop{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 86px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+
+    #dariuulogo{
+        position: absolute;
+        left: 28px;
+        top: 2px;
+        -webkit-user-drag: none;
+    }
+
+    ul{
+        position: absolute;
+        display: flex;
+        right: 50px;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+
+        color: #A9E8FF;
+        li{
+            font-family: Accidental Presidency;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 42px;
+            padding: 0px 50px;
+        }
+        a{
+            color: #A9E8FF;
+        }
+        a:hover{
+            color: #c9eefc;
+        }
+    }
+  
+}
+#header-mobile{
+    display: none;
+}
+
+.musicPanel{
+    display: none;
+    position: absolute;
+    top: 86px;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    ul{
+        li{
+            
+            padding: 10px 50px;
+            list-style-type: none;
+            font-size: 36px;
+            text-align: right;
+            a{
+                color: #ffffff;
+            }
+            a:hover{
+                color: #c9eefc;
+            }
+        }
+    }
+}
+
+.musicPanelmobile{
+    display: none;
+    position: absolute;
+    top: 86px;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    ul{
+        li{
+            padding: 10px 50px;
+            list-style-type: none;
+            font-size: 36px;
+            text-align: right;
+            a{
+                color: #ffffff;
+            }
+            a:hover{
+                color: #c9eefc;
+            }
+        }
+    }
+}
+
+body{
+    background-color: #2C2C2C;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Accidental Presidency;
+    color: #A9E8FF;
+}
+
+
+.show {display: block;}
+
+#banner{
+    display: none;
+}
+
+#linkscontainer{
+    color: #A9E8FF;
+    #links{
+        p{
+            text-align: center;
+            margin: 5px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                display: inline;
+                padding: 0px 20px;
+    
+                font-family: Accidental Presidency;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 30px;
+                align-items: center;
+                text-align: center;
+    
+                color: #A9E8FF;
+                a{
+                    color: #A9E8FF;
+                }
+                a:hover{
+                    color: #c9eefc;
+                }
+                
+            }
+        }
+        
+    }
+    
+
+}
+
+#welcome{
+    width: 100vw;
+    height: 700px;
+    background-image: url(/media/BMEP\ Spotify\ Banner\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #2E2B22;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    div{
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 140px 140px 0px 0px;
+    }
+    
+    h1{
+        margin: 0px;
+        padding: 10px;
+        // background-color: #2E2B22;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        
+        font-family: IM_FELL_DPICA;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 75px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.09em;
+    }
+    img{
+        // background-color: #2E2B22;
+        -webkit-user-drag: none;
+    }
+    h2{
+        // background-color: #2E2B22;
+        padding: 0px 0px 50px 0px;
+        width: 70vw;
+        margin: auto;
+        font-family: IM_FELL_DPICA;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 42px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
+}
+
+#singles{
+    color : #ffffff;
+    padding: 50px;
+    font-family: Groovy;
+    font-size: 42px;
+    background: #171717;
+    box-shadow: 0px 8px 43px rgba(0, 0, 0, 0.64);
+
+    #single{
+        font-size: 42px;
+        margin: auto;
+        width: 90vw;
+        padding: 20px 0px;
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+
+        // background-color: aquamarine;
+        #description{
+            color : #d7e0f3;
+            display: flex;
+            flex-direction: row;
+            grid-area: 1 / span 2;
+            img{
+                width: 50%;
+                object-fit: contain;
+            }
+            
+            #text{
+                color : #ffffff;
+                width: 80%;
+                grid-area: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 50px;
+                h2{
+                    font-size: 48px;
+                }
+                h3{
+                    font-size: 42px;
+                }
+                a{
+                    color : #ffffff;
+                }
+            }
+        }
+        #video{
+            width: 100%;
+            // background-color: #902437;
+            grid-area: 1 / span 3;
+        }
+        
+    }
+}
+
+#posters{
+    background-image: url(/media/BMEP\ Spotify\ Banner\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    // padding: 20px 0px;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+footer{
+    color: #A9E8FF;
+    font-size: 24px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+#listen_now{
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 100px 100px;
+    img{
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+    #listen{
+        color: #ffffff;
+        padding: 20px;
+        font-family: Groovy;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            font-size: 48px;
+            line-height: 23px;
+        }
+        h2{
+            font-size: 36px;
+            line-height: 7px;
+        }
+        h3{
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        a{
+            color: #ffffff;
+        }
+    }
+}
+
+
+@font-face {
+    font-family: Accidental Presidency;
+    src: url('/fonts/accid__-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/accid__-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/accid__-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/accid__-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/accid__-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/accid__-webfont.svg') format('svg'); /* Legacy iOS */
+  }
+
+@font-face{
+    font-family: Laviossa;
+    src: url('/fonts/laviossa-medium_0-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/laviossa-medium_0-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/laviossa-medium_0-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/laviossa-medium_0-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/laviossa-medium_0-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/laviossa-medium_0-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face{
+    font-family: IM_FELL;
+    src: url('/fonts/FePirm2.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/FePirm2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/fepirm2-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/fepirm2-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/fepirm2-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/FePirm2.svg') format('svg'); /* Legacy iOS */
+}
+@font-face{
+    font-family: IM_FELL_DPICA;
+    src: url('/fonts/IM_FELL_Double_Pica_Roman_SC.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/IM_FELL_Double_Pica_Roman_SC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/fedpsc2-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/fedpsc2-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/FeDPsc2.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/IM_FELL_Double_Pica_Roman_SC.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face{
+    font-family: Groovy;
+    src: url('/fonts/groovy-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/groovy-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/groovy-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/groovy-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/Groovy.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/groovy-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+body::-webkit-scrollbar {
+width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+background: #2E2B22;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:#D2C8A8;    /* color of the scroll thumb */
+width: 15px;
+}

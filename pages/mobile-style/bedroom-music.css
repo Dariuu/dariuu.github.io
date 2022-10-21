@@ -1,0 +1,336 @@
+#header-desktop {
+  display: none;
+}
+
+#header-mobile {
+  display: block;
+  position: absolute;
+  width: 100vw;
+  height: 86px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+#header-mobile #dariuulogo {
+  position: absolute;
+  left: 28px;
+  top: 2px;
+  -webkit-user-drag: none;
+}
+#header-mobile ul {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  color: #A9E8FF;
+}
+#header-mobile ul li {
+  font-family: Accidental Presidency;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  padding: 0px 50px;
+}
+#header-mobile ul a {
+  color: #A9E8FF;
+}
+
+.musicPanelmobile {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 86px;
+  border-bottom-left-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.musicPanelmobile ul li {
+  padding: 10px 50px;
+  list-style-type: none;
+  font-size: 36px;
+  text-align: right;
+}
+.musicPanelmobile ul li a {
+  color: #EBEBEB;
+}
+
+.musicPanel {
+  display: none;
+  position: absolute;
+  right: 0px;
+  border-bottom-left-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.musicPanel ul li {
+  padding: 10px 50px;
+  list-style-type: none;
+  font-size: 36px;
+  text-align: right;
+}
+.musicPanel ul li a {
+  color: #EBEBEB;
+}
+
+body {
+  background-color: #2C2C2C;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Accidental Presidency;
+  color: #A9E8FF;
+}
+
+.show {
+  display: block;
+}
+
+#banner {
+  display: none;
+  background-color: #2E2B22;
+  align-items: center;
+}
+#banner img {
+  width: 100vw;
+  height: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#linkscontainer {
+  color: #A9E8FF;
+}
+#linkscontainer #links p {
+  text-align: center;
+  margin: 5px;
+}
+#linkscontainer #links ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#linkscontainer #links ul li {
+  display: inline;
+  padding: 0px 20px;
+  font-family: Accidental Presidency;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: #A9E8FF;
+}
+#linkscontainer #links ul li a {
+  color: #A9E8FF;
+}
+#linkscontainer #links ul li a:hover {
+  color: #c9eefc;
+}
+
+#welcome {
+  background-image: url(/media/BMEP\ Spotify\ Banner\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#welcome div {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 50px 50px 0px 0px;
+}
+#welcome h1 {
+  margin: 0px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: IM_FELL;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 75px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.09em;
+}
+#welcome h1 img {
+  width: 80vw;
+}
+#welcome img {
+  -webkit-user-drag: none;
+}
+#welcome h2 {
+  padding: 0px 0px 50px 0px;
+  width: 70vw;
+  margin: auto;
+  font-family: IM_FELL;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+#singles {
+  text-align: center;
+  color: #ffffff;
+  padding: 5px;
+  font-family: Groovy;
+  background: #171717;
+  box-shadow: 0px 8px 43px rgba(0, 0, 0, 0.64);
+  font-size: 28px;
+}
+#singles #single {
+  margin: auto;
+  width: 90vw;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+#singles #single #description {
+  color: #d7e0f3;
+}
+#singles #single #description img {
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#singles #single #description #text {
+  margin: auto;
+  color: #ffffff;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+#singles #single #description #text h2 {
+  font-size: 36px;
+}
+#singles #single #description #text h3 {
+  font-size: 24px;
+}
+#singles #single #description #text a {
+  color: #ffffff;
+}
+#singles #single #video {
+  margin: auto;
+  width: 80%;
+  height: 40vw;
+}
+
+#posters {
+  background-image: url(/media/BMEP\ Spotify\ Banner\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#posters img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#listen_now {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 0px 0px 30px 30px;
+}
+#listen_now img {
+  margin: auto;
+  padding-top: 50px;
+  width: 60vw;
+}
+#listen_now #listen {
+  color: #ffffff;
+  padding: 20px;
+  font-family: Groovy;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#listen_now #listen h1 {
+  font-size: 32px;
+  line-height: 32px;
+}
+#listen_now #listen h2 {
+  font-size: 36px;
+  line-height: 7px;
+}
+#listen_now #listen h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+#listen_now #listen a {
+  color: #ffffff;
+}
+
+footer {
+  color: #A9E8FF;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Accidental Presidency;
+  src: url("/fonts/accid__-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: Laviossa;
+  src: url("/fonts/laviossa-medium_0-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/laviossa-medium_0-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/laviossa-medium_0-webfont.woff2") format("woff2"), url("/fonts/laviossa-medium_0-webfont.woff") format("woff"), url("/fonts/laviossa-medium_0-webfont.ttf") format("truetype"), url("/fonts/laviossa-medium_0-webfont.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: IM_FELL;
+  src: url("/fonts/FePirm2.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/FePirm2.eot?#iefix") format("embedded-opentype"), url("/fonts/fepirm2-webfont.woff2") format("woff2"), url("/fonts/fepirm2-webfont.woff") format("woff"), url("/fonts/fepirm2-webfont.ttf") format("truetype"), url("/fonts/FePirm2.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: Groovy;
+  src: url("/fonts/groovy-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/groovy-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/groovy-webfont.woff2") format("woff2"), url("/fonts/groovy-webfont.woff") format("woff"), url("/fonts/Groovy.ttf") format("truetype"), url("/fonts/groovy-webfont.svg") format("svg"); /* Legacy iOS */
+}
+body::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #2C2C2C; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c01e1b; /* color of the scroll thumb */
+  width: 15px;
+}/*# sourceMappingURL=bedroom-music.css.map */
