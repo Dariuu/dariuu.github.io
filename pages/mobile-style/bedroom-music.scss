@@ -25,7 +25,7 @@
         align-items: center;
         text-align: center;
 
-        color: #A9E8FF;
+        color: #EBEBEB;
         li{
             font-family: Accidental Presidency;
             font-style: normal;
@@ -35,7 +35,7 @@
             padding: 0px 50px;
         }
         a{
-            color: #A9E8FF;
+            color: #EBEBEB;
         }
     }
   
@@ -89,7 +89,7 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
     font-family: Accidental Presidency;
-    color: #A9E8FF;
+    color: #EBEBEB;
 }
 
 
@@ -107,7 +107,7 @@ body{
 }
 
 #linkscontainer{
-    color: #A9E8FF;
+    color: #EBEBEB;
     #links{
         p{
             text-align: center;
@@ -130,9 +130,9 @@ body{
                 align-items: center;
                 text-align: center;
     
-                color: #A9E8FF;
+                color: #EBEBEB;
                 a{
-                    color: #A9E8FF;
+                    color: #EBEBEB;
                 }
                 a:hover{
                     color: #c9eefc;
@@ -200,7 +200,7 @@ body{
     text-align: center;
     color : #ffffff;
     padding: 5px;
-    font-family: Groovy;
+    font-family: Coolvetica;
     background: #171717;
     box-shadow: 0px 8px 43px rgba(0, 0, 0, 0.64);
     font-size: 28px;
@@ -284,7 +284,7 @@ body{
     #listen{
         color: #ffffff;
         padding: 20px;
-        font-family: Groovy;
+        font-family: Coolvetica;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -308,7 +308,7 @@ body{
 }
 
 footer{
-    color: #A9E8FF;
+    color: #EBEBEB;
     font-size: 24px;
 
     justify-content: center;
@@ -354,7 +354,16 @@ footer{
         url('/fonts/Groovy.ttf')  format('truetype'), /* Safari, Android, iOS */
         url('/fonts/groovy-webfont.svg') format('svg'); /* Legacy iOS */
 }
-
+@font-face {
+    font-family: Coolvetica;
+    font-weight: 500;
+    src: url('/fonts/coolvetica_rg-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/coolvetica_rg-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/coolvetica_rg-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/coolvetica_rg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/coolvetica_rg-webfont.svg') format('svg'); /* Legacy iOS */
+    }
 
 body::-webkit-scrollbar {
 width: 15px;               /* width of the entire scrollbar */

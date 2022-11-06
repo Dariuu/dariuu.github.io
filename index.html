@@ -11,61 +11,46 @@
 </head>
 <body>
 
-    <div id="dariuu">
+    
+    <!-- <div id="dariuu">
         <div>
             <img id="logo" src="/media/Dariuu Logo white big.png" alt="">
         </div>
-    </div>
-
-    <div class="albums">
-        <div id="album">
-            <a href="/pages/bedroom-music.html">
-                <img src="/media/bedroom music cover 1 2.png" alt="Dariuu Bedroom Music EP Cover">
-            </a>
-            <a href="/pages/its-pretty-dark.html">Bedroom Music - EP</a>
+    </div> -->
+    <div class="header-island">
+        <div class="menu">
+            <a onclick="dropdown()" class="dropbtn" href="javascript:void(0);"><img style="pointer-events: none;" src="media/Vector.svg" alt=""></a>
+            
         </div>
-        <div id="album">
-            <a href="/pages/its-pretty-dark.html">
-                <img src="/media/its pretty dark cover 2.png" alt="Dariuu It's Pretty Dark Single Cover">
-            </a>
-            <a href="/pages/its-pretty-dark.html">It's Pretty Dark - Single</a>
-        </div>
-        <div id="album">
-            <a href="/pages/stardust.html">
-                <img src="/media/stardust cover2 2.png" alt="Dariuu Stardust Album Cover">
-            </a>
-            <a href="/pages/stardust.html">Stardust - Album</a>
-        </div>
-        <div id="album">
-            <a href="/pages/daemonium.html">
-                <img src="/media/daemonium halftone cover 2.png" alt="Dariuu DÆMONIUM EP Cover">
-            </a>
-            <a href="/pages/daemonium.html">DÆMONIUM - EP</a>
-        </div>
-        <div id="album">
-            <a href="/pages/alien-damnation.html">
-                <img src="/media/ALIEN DAMNATION 5 2.png" alt="Dariuu Alien Damnation Album Cover">
-            </a>
-            <a href="/pages/alien-damnation.html">Alien Damnation - Album</a>
+        <div class="logo-island">
+            <img id="logo" src="/media/Dariuu Logo white big.png" alt="">
         </div>
         
     </div>
-
-    <div id="linkscontainer">
-        <div id="links">
-            <p style="font-size: 36px;line-height: 10px;">Links</p>
+    <div id="dropdown" class="dropdown">
             <ul>
-                <li><a href="https://twitter.com/_dariuu_"><p>Twitter<img  src="/media/twitter.png" alt=""></p></a></li>
-                <li><a href="https://www.instagram.com/_dariuu_/"><p>Instagram<img  src="/media/instagram.png" alt=""></p></a></li>
-                <li><a href="https://www.tiktok.com/@_dariuu_?is_from_webapp=1&sender_device=pc"><p>TikTok<img src="/media/tiktok.png" alt=""></p></a></li>
-                <li><a href="https://www.facebook.com/dariuuofficial/"><p>Facebook<img  src="/media/facebook.png" alt=""></p></a></li>
-                <li><a href="https://open.spotify.com/artist/6hWlKGwIdSKKGy0aEjjy8e?si=t0oyFdIHQbeubRn17qweHA"><p>Spotify<img  src="/media/Group 1.png" alt=""></p></a></li>
-                <li><a href="https://music.apple.com/us/artist/dariuu/1556086006"><p>Apple Music<img  src="/media/music.png" alt=""></p></a></li>
-                <li><a href="https://www.youtube.com/channel/UC9z13fJV0wvqRpKahNUJZmw"><p>YouTube<img  src="/media/youtube.png" alt=""></p></a></li>
-                <li><a href="https://soundcloud.com/dariuuofficial"><p>Soundcloud<img  src="/media/soundcloud.png" alt=""></p></a></li>
-                <li><a href="/pages/about.html"><p>ABOUT DARIUU</p></a></li>
-                
+                <li><a href="/pages/about.html">About Dariuu</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><br></li>
+                <li><a href="/pages/bedroom-music.html">Bedroom Music - EP</a></li>
+                <li><a href="/pages/its-pretty-dark.html">It's Pretty Dark - Single</a></li>
+                <li><a href="/pages/stardust.html">Stardust - Album</a></li>
+                <li><a href="/pages/daemonium.html">Dæmonium - EP</a></li>
+                <li><a href="/pages/alien-damnation.html">Alien Damnation - Album</a></li>
             </ul>
+    </div>
+    <div class="new-music">
+        <div class="content">
+
+            <div class="island">
+                <img src="media/bedroom music cover final 1.png" alt="">
+                <div class="under-img">
+                    <h1>Bedroom Music EP</h1>
+                    <h2>October 28th</h2>
+                    <p><br></p>
+                    <a href="/pages/bedroom-music.html">Learn More</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -74,14 +59,24 @@
         <p>Contact: dariuuinfo@gmail.com</p>
     </footer>
 
-<script type="text/javascript">
-    let image = document.getElementById('logo');
-    let images = ['/media/Logos/dariuu main 1.png', '/media/Logos/dariuu main 2.png', '/media/Logos/dariuu main 3.png','/media/Logos/dariuu main 4.png', '/media/Logos/dariuu main 5.png', '/media/Logos/dariuu main 6.png'];
-    setInterval(function(){
-        let random = Math.floor(Math.random() * 6);
-        image.src = images[random];
-    }, 1000);
-</script>
-
+    <script>
+        function dropdown() {
+          document.getElementById("dropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>
 </body>
 </html>

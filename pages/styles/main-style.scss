@@ -1,15 +1,151 @@
 
 body{
     background-color: rgb(45, 45, 45);
-    background-image: url(/media/BMEP\ Spotify\ Banner\ 2.png);
+    background-image: url(/media/BMEP\ MAIN.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     max-width: 100vw;
+    max-height: 100vh;
     overflow-x: hidden;
-    font-family: Accidental Presidency;
+    font-family: Coolvetica;
     color: #EBEBEB;
+}
+
+.header-island{
+    padding-top: 20px;
+    display: flex;
+    width: 400px;
+    height: 60px;
+    
+    .menu{
+        display: flex;
+        margin: 0px 5px 0px 50px;
+        width: 60px;
+        height: 60px;
+
+        background: rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(5px);
+        border-radius: 40px;
+
+        text-align: center;
+        justify-content: center;
+        a{
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            justify-content: center;
+            img{
+                padding-top: 20px;
+                width: 50%;
+            }
+        }
+        
+    }
+
+
+
+    .logo-island{
+        margin: 0px 5px 0px 5px;
+        width: 120px;
+        height: 60px;
+        background: rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
+        backdrop-filter: blur(5px);
+        border-radius: 40px;
+        text-align: center;
+            justify-content: center;
+        img{
+            -webkit-user-drag: none;
+            padding-top: 20px;
+            width: 80%;
+        }
+    }
+}
+.dropdown{
+    z-index: 10;
+    display: none;
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
+    backdrop-filter: blur(5px);
+    border-radius: 40px;
+    position: absolute;
+    top: 90px;
+    left: 50px;
+    width: 200px;
+    ul{
+        padding: 15px;
+        list-style-type: none;
+    }
+    a{
+        color: #EBEBEB;
+        text-decoration: none;
+    }
+}
+.show {display: block;}
+
+.new-music{
+    font-family: Coolvetica;
+    // background-color: red;
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    .content{
+        display: flex;
+        // background-color: #EBEBEB;
+        margin: auto;
+    }
+    .island{
+        display: flex;
+        margin: auto;
+        width: 842px;
+        height: 450px;
+        justify-content: center;
+    
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(15px) !important;
+        border-radius: 100px;
+        .under-img{
+            display: block;
+            text-align: center;
+            // background-color: red;
+            position: absolute;
+            top: 60%;
+            h1{
+                font-size: 36px;
+                letter-spacing: 1.5px;
+                line-height: 10px;
+            }
+            p{
+                line-height: 2px;
+            }
+            a{
+                color: #EBEBEB;
+                padding: 15px 50px;
+                background: rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(15px) !important;
+                border-radius: 100px;
+            }
+            a:hover{
+                background: rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+                backdrop-filter: blur(20px) !important; 
+            }
+        }
+        img{
+            -webkit-user-drag: none;
+            position: absolute;
+            width: 426px;
+            height: 426px;
+            top: -160px;
+            right: 200px;
+            margin: auto;
+        }
+    }
 }
 
 #dariuu{
@@ -113,11 +249,12 @@ body{
 }
 
 footer{
+    margin: 15px;
     line-height: 10px;
     font-size: 24px;
 
-    justify-content: center;
-    text-align: center;
+    justify-content: right;
+    text-align: right;
 }
 
 
@@ -148,6 +285,16 @@ footer{
         url('/fonts/accid__-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
         url('/fonts/accid__-webfont.svg') format('svg'); /* Legacy iOS */
   }
+@font-face {
+font-family: Coolvetica;
+font-weight: 500;
+src: url('/fonts/coolvetica_rg-webfont.eot'); /* IE9 Compat Modes */
+src: url('/fonts/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/coolvetica_rg-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+    url('/fonts/coolvetica_rg-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/fonts/coolvetica_rg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/coolvetica_rg-webfont.svg') format('svg'); /* Legacy iOS */
+}
 
 body::-webkit-scrollbar {
 width: 15px;               /* width of the entire scrollbar */
