@@ -34,7 +34,9 @@
             padding: 0px 50px;
         }
         a{
-            color: #D2C8A8;
+            color: #D2C8A8;text-decoration: none;
+        }a:hover{
+            text-decoration: underline;
         }
     }
   
@@ -54,7 +56,9 @@
             font-size: 36px;
             text-align: right;
             a{
-                color: #EBEBEB;
+                color: #EBEBEB;text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -73,7 +77,9 @@
             font-size: 36px;
             text-align: right;
             a{
-                color: #EBEBEB;
+                color: #EBEBEB;text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
             }
         }
     }

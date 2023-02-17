@@ -30,7 +30,9 @@
             padding: 0px 50px;
         }
         a{
-            color: #D2C8A8;
+            color: #D2C8A8;text-decoration: none;
+        }a:hover{
+            text-decoration: underline;
         }
     }
   
@@ -55,6 +57,9 @@
             text-align: right;
             a{
                 color: #EBEBEB;
+                text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -74,7 +79,9 @@
             font-size: 36px;
             text-align: right;
             a{
-                color: #EBEBEB;
+                color: #EBEBEB;text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -293,6 +300,16 @@ footer{
         url('/fonts/FeDPsc2.ttf')  format('truetype'), /* Safari, Android, iOS */
         url('/fonts/IM_FELL_Double_Pica_Roman_SC.svg') format('svg'); /* Legacy iOS */
 }
+@font-face {
+    font-family: Coolvetica;
+    font-weight: 500;
+    src: url('/fonts/coolvetica_rg-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/coolvetica_rg-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/coolvetica_rg-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/coolvetica_rg-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/coolvetica_rg-webfont.svg') format('svg'); /* Legacy iOS */
+    }
 
 body::-webkit-scrollbar {
 width: 15px;               /* width of the entire scrollbar */

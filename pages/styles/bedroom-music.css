@@ -32,9 +32,11 @@
 }
 #header-desktop ul a {
   color: #EBEBEB;
+  text-decoration: none;
 }
 #header-desktop ul a:hover {
   color: #e2edee;
+  text-decoration: underline;
 }
 
 #header-mobile {
@@ -59,9 +61,11 @@
 }
 .musicPanel ul li a {
   color: #ffffff;
+  text-decoration: none;
 }
 .musicPanel ul li a:hover {
   color: #e2edee;
+  text-decoration: underline;
 }
 
 .musicPanelmobile {
@@ -82,9 +86,11 @@
 }
 .musicPanelmobile ul li a {
   color: #ffffff;
+  text-decoration: none;
 }
 .musicPanelmobile ul li a:hover {
   color: #e2edee;
+  text-decoration: underline;
 }
 
 body {

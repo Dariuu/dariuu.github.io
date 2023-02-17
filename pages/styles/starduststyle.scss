@@ -77,7 +77,10 @@ body{
             padding: 0px 50px;
         }
         a{
-            color: #ffffff;
+            color: #ffffff;text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
         }
     }
   
@@ -100,7 +103,10 @@ body{
             font-size: 36px;
             text-align: right;
             a{
-                color: #EBEBEB;
+                color: #EBEBEB;text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
             }
         }
     }
@@ -120,7 +126,10 @@ body{
             font-size: 36px;
             text-align: right;
             a{
-                color: #EBEBEB;
+                color: #EBEBEB;text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
             }
         }
     }

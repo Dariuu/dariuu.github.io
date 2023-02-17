@@ -34,6 +34,10 @@
 }
 #header-mobile ul a {
   color: #D2C8A8;
+  text-decoration: none;
+}
+#header-mobile ul a:hover {
+  text-decoration: underline;
 }
 
 .musicPanelmobile {
@@ -53,6 +57,10 @@
 }
 .musicPanelmobile ul li a {
   color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanelmobile ul li a:hover {
+  text-decoration: underline;
 }
 
 .musicPanel {
@@ -72,6 +80,10 @@
 }
 .musicPanel ul li a {
   color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanel ul li a:hover {
+  text-decoration: underline;
 }
 
 body {

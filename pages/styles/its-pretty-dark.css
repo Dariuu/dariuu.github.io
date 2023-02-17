@@ -30,6 +30,10 @@
 }
 #header-desktop ul a {
   color: #D2C8A8;
+  text-decoration: none;
+}
+#header-desktop ul a:hover {
+  text-decoration: underline;
 }
 
 #header-mobile {
@@ -53,6 +57,10 @@
 }
 .musicPanel ul li a {
   color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanel ul li a:hover {
+  text-decoration: underline;
 }
 
 .musicPanelmobile {
@@ -72,6 +80,10 @@
 }
 .musicPanelmobile ul li a {
   color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanelmobile ul li a:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -250,6 +262,12 @@ footer {
   font-family: IM_FELL_DPICA;
   src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot"); /* IE9 Compat Modes */
   src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot?#iefix") format("embedded-opentype"), url("/fonts/fedpsc2-webfont.woff2") format("woff2"), url("/fonts/fedpsc2-webfont.woff") format("woff"), url("/fonts/FeDPsc2.ttf") format("truetype"), url("/fonts/IM_FELL_Double_Pica_Roman_SC.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: Coolvetica;
+  font-weight: 500;
+  src: url("/fonts/coolvetica_rg-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/coolvetica_rg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("/fonts/coolvetica_rg-webfont.woff") format("woff"), url("/fonts/coolvetica_rg-webfont.ttf") format("truetype"), url("/fonts/coolvetica_rg-webfont.svg") format("svg"); /* Legacy iOS */
 }
 body::-webkit-scrollbar {
   width: 15px; /* width of the entire scrollbar */
