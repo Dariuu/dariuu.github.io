@@ -99,6 +99,7 @@ body{
     width: 100vw;
     // height: 80vh;
     .content{
+        flex-direction: column;
         display: flex;
         justify-content: center;
         // background-color: #EBEBEB;

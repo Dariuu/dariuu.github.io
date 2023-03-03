@@ -101,6 +101,7 @@ body {
   width: 100vw;
 }
 .new-music .content {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   margin: auto;
