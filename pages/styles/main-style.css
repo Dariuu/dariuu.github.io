@@ -1,5 +1,6 @@
 body {
   background-color: rgb(0, 0, 0);
+  background-image: url(/media/websitebanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
