@@ -1,6 +1,6 @@
 body {
   background-color: rgb(0, 0, 0);
-  background-image: url(/media/websitebanner.jpg);
+  background-image: url(/media/NIGHTCITY_e1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,16 +9,15 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: Coolvetica;
   color: #EBEBEB;
 }
 
 #videoBG {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 0;
+  height: 100vw;
 }
 
 .header-island {
@@ -124,6 +123,50 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: blur(15px) !important;
           backdrop-filter: blur(15px) !important;
+}
+.new-music .island {
+  display: flex;
+  margin: auto;
+  width: 842px;
+  height: 450px;
+  justify-content: center;
+  border-radius: 100px;
+}
+.new-music .island .under-img {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+}
+.new-music .island .under-img h1 {
+  font-size: 36px;
+  letter-spacing: 1.5px;
+  line-height: 10px;
+}
+.new-music .island .under-img p {
+  line-height: 2px;
+}
+.new-music .island .under-img a {
+  color: #EBEBEB;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(15px) !important;
+          backdrop-filter: blur(15px) !important;
+  border-radius: 100px;
+}
+.new-music .island .under-img a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(20px) !important;
+          backdrop-filter: blur(20px) !important;
+}
+.new-music .island img {
+  -webkit-user-drag: none;
+  position: absolute;
+  width: 426px;
+  height: 426px;
+  margin: auto;
 }
 
 #dariuu {

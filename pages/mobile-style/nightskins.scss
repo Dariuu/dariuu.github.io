@@ -1,0 +1,305 @@
+#header-desktop{
+    display: none;
+  
+}
+#header-mobile{
+    display: block;
+    width: 100vw;
+    height: 86px;
+    background-color: #0e0e46;
+    box-shadow: 0px 5px 5px #0e0e46;
+
+    #dariuulogo{
+        position: absolute;
+        left: 28px;
+        top: 20px;
+        -webkit-user-drag: none;
+    }
+
+    ul{
+        position: absolute;
+        display: flex;
+        right: 10px;
+        list-style: none;
+        align-items: center;
+        text-align: center;
+
+        color: #a8cad2;
+        li{
+            font-family: Accidental Presidency;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 42px;
+            padding: 0px 50px;
+        }
+        a{
+            color: #a8cad2;text-decoration: none;
+        }a:hover{
+            text-decoration: underline;
+        }
+    }
+  
+}
+
+.musicPanelmobile{
+    display: none;
+    position: absolute;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    ul{
+        li{
+            padding: 10px 50px;
+            list-style-type: none;
+            font-size: 36px;
+            text-align: right;
+            a{
+                color: #EBEBEB;text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.musicPanel{
+    display: none;
+    position: absolute;
+    right: 0px;
+    border-bottom-left-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    ul{
+        li{
+            padding: 10px 50px;
+            list-style-type: none;
+            font-size: 36px;
+            text-align: right;
+            a{
+                color: #EBEBEB;text-decoration: none;
+            }a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+body{
+    background-color: #0e0e46;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    font-family: Accidental Presidency;
+    color: #a8cad2;
+}
+
+
+.show {display: block;}
+
+#banner{
+    
+    background-color: #0e0e46;
+    align-items: center;
+    img{
+        width: 100vw;
+        height: 178px;
+        object-fit: cover;
+    }
+}
+
+#linkscontainer{
+    color: #a8cad2;
+    #links{
+        p{
+            text-align: center;
+            margin: 5px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            li{
+                display: inline;
+                padding: 0px 20px;
+    
+                font-family: Accidental Presidency;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 30px;
+                align-items: center;
+                text-align: center;
+    
+                color: #a8cad2;
+                a{
+                    color: #a8cad2;
+                }
+            }
+        }
+        
+    }
+    
+
+}
+
+#welcome{
+    background-color: #0e0e46;
+    
+    h1{
+        img{
+            width: 80vw;
+        }
+        margin: 0px;
+        padding: 10px;
+        background-color: #0e0e46;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;        
+        font-family: Coolvetica;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 75px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: .1em;
+    }
+    img{
+        background-color: #0e0e46;
+        -webkit-user-drag: none;
+    }
+    h2{
+        background-color: #0e0e46;
+        padding: 0px 0px 50px 0px;
+        width: 70vw;
+        margin: auto;
+        font-family: Coolvetica;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.01em;
+    }
+}
+
+#singles{
+    text-align: center;
+    color : #a8cad2;
+    padding: 5px;
+    font-family: Coolvetica;
+    background: #0a1447;
+    box-shadow: 0px 8px 43px rgba(0, 0, 0, 0.64);
+
+    #single{
+        margin: auto;
+        width: 90vw;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+
+        // background-color: aquamarine;
+        #description{
+            color : #a8cad2;
+            img{
+                width: 80%;
+                object-fit: contain;
+            }
+            
+            #text{
+                margin: auto;
+                color : #a8cad2;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                h2{
+                    font-size: 36px;
+                }
+                h3{
+                    font-size: 24px;
+                }
+                a{
+                    color : #a8cad2;
+                }
+            }
+        }
+        #video{
+            margin: auto;
+            width: 80%;
+            height: 40vw;
+        }
+        
+    }
+}
+
+#posters{
+    width: 100vw;
+    // height: 1071px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // padding: 20px 0px;
+
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+
+footer{
+    color: #a8cad2;
+    font-size: 24px;
+
+    justify-content: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: Accidental Presidency;
+    src: url('/fonts/accid__-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/accid__-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/accid__-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/accid__-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/accid__-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/accid__-webfont.svg') format('svg'); /* Legacy iOS */
+  }
+
+@font-face{
+    font-family: Laviossa;
+    src: url('/fonts/laviossa-medium_0-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/laviossa-medium_0-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/laviossa-medium_0-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/laviossa-medium_0-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/laviossa-medium_0-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/laviossa-medium_0-webfont.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face{
+    font-family: IM_FELL;
+    src: url('/fonts/FePirm2.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/FePirm2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('/fonts/fepirm2-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/fepirm2-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/fepirm2-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/FePirm2.svg') format('svg'); /* Legacy iOS */
+}
+
+body::-webkit-scrollbar {
+width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+background: #2C2C2C;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+background-color:#c01e1b;    /* color of the scroll thumb */
+width: 15px;
+}
