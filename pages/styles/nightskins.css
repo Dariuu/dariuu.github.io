@@ -229,15 +229,63 @@ body {
 }
 
 #posters {
+  background-image: url(/media/NIGHTCITY_e1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 #posters img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+#listen_now {
+  position: absolute;
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 0px 0px 100px 100px;
+}
+#listen_now img {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+#listen_now #listen {
+  color: #ffffff;
+  padding: 20px;
+  font-family: Coolvetica;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#listen_now #listen h1 {
+  font-size: 48px;
+  line-height: 23px;
+}
+#listen_now #listen h2 {
+  font-size: 36px;
+  line-height: 7px;
+}
+#listen_now #listen h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+#listen_now #listen a {
+  color: #ffffff;
 }
 
 footer {
