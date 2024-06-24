@@ -1,9 +1,6 @@
 body {
-  background-image: url(/media/NIGHTSKIN\ Lowrez.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/media/grit\ web\ background.jpg);
   background-size: cover;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   margin: 0;
   padding: 0;
   max-width: 100vw;
@@ -45,7 +42,7 @@ body {
 }
 #linkscontainer #links ul li a:hover {
   background-color: rgb(255, 255, 255);
-  color: #05c484;
+  color: #c40505;
 }
 #linkscontainer #links ul li a:active {
   color: #040c3d;
@@ -65,7 +62,8 @@ body {
   background-size: cover;
 }
 #header-mobile #dariuulogo {
-  width: 90vw;
+  padding: 20px;
+  width: 80vw;
   -webkit-user-drag: none;
   margin: auto;
   text-align: center;
