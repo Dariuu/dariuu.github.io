@@ -17,17 +17,17 @@ body{
 
 #videoBG{
     position: fixed;
-    //right: 0;
-    top: 0;
-    //width: 120%;
-    width: 100vw;
+    display: block;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
 }   
 
 .header-island{
-    padding-top: 20px;
     display: flex;
-    width: 400px;
-    height: 60px;
+    width: 50vw;
+    height: 100vh;
     
     .menu{
         display: flex;
@@ -52,25 +52,49 @@ body{
                 width: 50%;
             }
         }
-        
+        a:hover{
+        color:rgb(255, 123, 0);
+        }
     }
 
 
 
     .logo-island{
-        margin: 0px 5px 0px 5px;
-        width: 120px;
-        height: 60px;
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+        height: 50%;
         background: rgba(0, 0, 0, 0.24);
-        box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
         backdrop-filter: blur(5px);
-        border-radius: 40px;
         text-align: center;
-            justify-content: center;
-        img{
-            -webkit-user-drag: none;
-            padding-top: 20px;
-            width: 80%;
+        justify-content: center;
+        #logo{
+            display: inline-block;
+            align-content: end;
+            width: 100%;
+            height: 90%;
+            img{
+                aspect-ratio: 1;
+                object-fit: contain;
+                -webkit-user-drag: none;
+                width: 90%;
+                height: 78%;
+            }
+        }
+        #nav{
+            margin: auto;
+            display: flex;
+            height: 20%;
+            width: 90%;
+            a{
+                color: white;
+                padding:0 20px 0 20px;
+            }
+            a:hover{
+            color:rgb(255, 123, 0);
+            }
         }
     }
 }
@@ -283,25 +307,6 @@ footer{
     text-align: right;
 }
 
-
-@font-face{
-    font-family: IM_FELL;
-    src: url('/fonts/FePirm2.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/FePirm2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/fepirm2-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/fepirm2-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        url('/fonts/fepirm2-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/FePirm2.svg') format('svg'); /* Legacy iOS */
-}
-@font-face{
-    font-family: IM_FELL_DPICA;
-    src: url('/fonts/IM_FELL_Double_Pica_Roman_SC.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/IM_FELL_Double_Pica_Roman_SC.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('/fonts/fedpsc2-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-        url('/fonts/fedpsc2-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        url('/fonts/FeDPsc2.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('/fonts/IM_FELL_Double_Pica_Roman_SC.svg') format('svg'); /* Legacy iOS */
-}
 @font-face {
     font-family: Accidental Presidency;
     src: url('/fonts/accid__-webfont.eot'); /* IE9 Compat Modes */

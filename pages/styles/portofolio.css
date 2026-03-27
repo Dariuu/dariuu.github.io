@@ -1,0 +1,253 @@
+body {
+  background-color: rgb(45, 45, 45);
+  background-image: url(/media/background-repeat.png);
+  background-repeat: repeat;
+  background-size: 30%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Coolvetica;
+  color: #EBEBEB;
+}
+
+#header-desktop {
+  font-family: Accidental Presidency;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 86px;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(5px);
+}
+#header-desktop div {
+  margin: auto;
+  width: 50%;
+  display: flex;
+}
+#header-desktop #dariuulogo {
+  margin: auto;
+  width: 150px;
+  height: 30px;
+  -webkit-user-drag: none;
+}
+#header-desktop hr {
+  margin: auto;
+}
+#header-desktop a {
+  color: white;
+  margin: auto;
+  font-size: 24px;
+  padding: 0 10px 0 10px;
+}
+#header-desktop a:hover {
+  color: rgb(255, 123, 0);
+}
+
+#header-mobile {
+  display: none;
+}
+
+.musicPanel {
+  display: none;
+  position: absolute;
+  right: 0px;
+  border-bottom-left-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+.musicPanel ul li {
+  padding: 10px 50px;
+  list-style-type: none;
+  font-size: 36px;
+  text-align: right;
+}
+.musicPanel ul li a {
+  color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanel ul li a:hover {
+  text-decoration: underline;
+}
+
+.musicPanelmobile {
+  display: none;
+  position: absolute;
+  right: 0px;
+  border-bottom-left-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+.musicPanelmobile ul li {
+  padding: 10px 50px;
+  list-style-type: none;
+  font-size: 36px;
+  text-align: right;
+}
+.musicPanelmobile ul li a {
+  color: #EBEBEB;
+  text-decoration: none;
+}
+.musicPanelmobile ul li a:hover {
+  text-decoration: underline;
+}
+
+.show {
+  display: block;
+}
+
+#back {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(255, 123, 0);
+  text-align: center;
+  z-index: 10;
+  font-size: 30px;
+  padding: 10px;
+}
+#back a {
+  color: white;
+}
+
+#content {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#content #title {
+  display: flex;
+  width: 100vw;
+}
+#content #title p {
+  padding-left: 2vw;
+  margin: auto;
+  font-size: 6vw;
+  width: 40vw;
+}
+#content #title #block {
+  margin: auto;
+  width: 60vw;
+  height: 4vw;
+  background-color: white;
+}
+#content #title #block p {
+  width: 90%;
+  text-align: right;
+  margin: 0;
+  color: black;
+  font-size: 4vw;
+}
+#content #project {
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
+}
+#content #project #info {
+  margin: 10px;
+}
+#content #project #art {
+  text-align: center;
+}
+#content #project #art img {
+  -webkit-user-drag: none;
+  margin: 10px;
+  width: 25vw;
+  height: auto;
+}
+#content #project a {
+  color: white;
+  text-decoration: none;
+}
+#content #project a:hover {
+  color: rgb(255, 123, 0);
+}
+#content #project p {
+  font-size: 18px;
+}
+#content #collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 15px;
+}
+#content #collection #info {
+  margin: 10px;
+}
+#content #collection #art img {
+  -webkit-user-drag: none;
+  margin: 10px;
+  width: 25vw;
+  height: auto;
+}
+
+#linkscontainer {
+  color: #ffffff;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 20px;
+}
+#linkscontainer #links p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#linkscontainer #links ul {
+  display: inline;
+}
+#linkscontainer #links ul li {
+  display: inline;
+  font-family: Coolvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 10px;
+  color: #ffffff;
+}
+#linkscontainer #links ul li a {
+  color: #ffffff;
+}
+#linkscontainer #links ul li a:hover {
+  color: rgb(255, 123, 0);
+}
+
+footer {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(5px);
+}
+
+@font-face {
+  font-family: Accidental Presidency;
+  src: url("/fonts/accid__-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/accid__-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/accid__-webfont.woff2") format("woff2"), url("/fonts/accid__-webfont.woff") format("woff"), url("/fonts/accid__-webfont.ttf") format("truetype"), url("/fonts/accid__-webfont.svg") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: Coolvetica;
+  font-weight: 500;
+  src: url("/fonts/coolvetica_rg-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/coolvetica_rg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/coolvetica_rg-webfont.woff2") format("woff2"), url("/fonts/coolvetica_rg-webfont.woff") format("woff"), url("/fonts/coolvetica_rg-webfont.ttf") format("truetype"), url("/fonts/coolvetica_rg-webfont.svg") format("svg"); /* Legacy iOS */
+}
+body::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(20, 20, 20); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 123, 0); /* color of the scroll thumb */
+  width: 15px;
+}/*# sourceMappingURL=portofolio.css.map */

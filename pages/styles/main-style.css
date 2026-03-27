@@ -16,15 +16,18 @@ body {
 
 #videoBG {
   position: fixed;
-  top: 0;
-  width: 100vw;
+  display: block;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header-island {
-  padding-top: 20px;
   display: flex;
-  width: 400px;
-  height: 60px;
+  width: 50vw;
+  height: 100vh;
 }
 .header-island .menu {
   display: flex;
@@ -33,8 +36,7 @@ body {
   height: 60px;
   background: rgba(0, 0, 0, 0.24);
   box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 40px;
   text-align: center;
   justify-content: center;
@@ -49,22 +51,46 @@ body {
   padding-top: 20px;
   width: 50%;
 }
+.header-island .menu a:hover {
+  color: rgb(255, 123, 0);
+}
 .header-island .logo-island {
-  margin: 0px 5px 0px 5px;
-  width: 120px;
-  height: 60px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 50%;
   background: rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  border-radius: 40px;
+  backdrop-filter: blur(5px);
   text-align: center;
   justify-content: center;
 }
-.header-island .logo-island img {
+.header-island .logo-island #logo {
+  display: inline-block;
+  align-content: end;
+  width: 100%;
+  height: 90%;
+}
+.header-island .logo-island #logo img {
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-user-drag: none;
-  padding-top: 20px;
-  width: 80%;
+  width: 90%;
+  height: 78%;
+}
+.header-island .logo-island #nav {
+  margin: auto;
+  display: flex;
+  height: 20%;
+  width: 90%;
+}
+.header-island .logo-island #nav a {
+  color: white;
+  padding: 0 20px 0 20px;
+}
+.header-island .logo-island #nav a:hover {
+  color: rgb(255, 123, 0);
 }
 
 .dropdown {
@@ -72,8 +98,7 @@ body {
   display: none;
   background: rgba(0, 0, 0, 0.24);
   box-shadow: 0px 7px 3px -2px rgba(0, 0, 0, 0.34);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   border-radius: 40px;
   position: absolute;
   top: 90px;
@@ -114,15 +139,13 @@ body {
   padding: 15px 50px;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(5px) !important;
-          backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px) !important;
   border-radius: 100px;
 }
 .new-music .content a:hover {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(15px) !important;
-          backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
 }
 .new-music .island {
   display: flex;
@@ -151,15 +174,13 @@ body {
   padding: 15px 50px;
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(15px) !important;
-          backdrop-filter: blur(15px) !important;
+  backdrop-filter: blur(15px) !important;
   border-radius: 100px;
 }
 .new-music .island .under-img a:hover {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(20px) !important;
-          backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important;
 }
 .new-music .island img {
   -webkit-user-drag: none;
@@ -251,12 +272,12 @@ body {
   text-align: center;
   color: #ffffff;
 }
+#linkscontainer #links ul li a img {
+  -webkit-user-drag: none;
+}
 #linkscontainer #links ul li a {
   color: #ffffff;
   text-decoration: none;
-}
-#linkscontainer #links ul li a img {
-  -webkit-user-drag: none;
 }
 #linkscontainer #links ul li a:hover {
   text-decoration: underline;
@@ -270,16 +291,6 @@ footer {
   text-align: right;
 }
 
-@font-face {
-  font-family: IM_FELL;
-  src: url("/fonts/FePirm2.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/FePirm2.eot?#iefix") format("embedded-opentype"), url("/fonts/fepirm2-webfont.woff2") format("woff2"), url("/fonts/fepirm2-webfont.woff") format("woff"), url("/fonts/fepirm2-webfont.ttf") format("truetype"), url("/fonts/FePirm2.svg") format("svg"); /* Legacy iOS */
-}
-@font-face {
-  font-family: IM_FELL_DPICA;
-  src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot"); /* IE9 Compat Modes */
-  src: url("/fonts/IM_FELL_Double_Pica_Roman_SC.eot?#iefix") format("embedded-opentype"), url("/fonts/fedpsc2-webfont.woff2") format("woff2"), url("/fonts/fedpsc2-webfont.woff") format("woff"), url("/fonts/FeDPsc2.ttf") format("truetype"), url("/fonts/IM_FELL_Double_Pica_Roman_SC.svg") format("svg"); /* Legacy iOS */
-}
 @font-face {
   font-family: Accidental Presidency;
   src: url("/fonts/accid__-webfont.eot"); /* IE9 Compat Modes */
