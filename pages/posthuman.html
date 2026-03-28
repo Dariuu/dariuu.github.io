@@ -47,10 +47,14 @@
                 <p>For this project I decided to approach the future. <br> How will the human evolve? <br> Will we merge with our technology? <br>  And how will that affect our way of living?</p>
             </div>
             <div id="gallery">
-
+                <img id="textLink" src="/media/txtFile.png" alt="">
             </div>
         </div>
 
+    </div>
+    
+    <div id="textPopup">
+        <iframe src="/pages/posthuman-text.html" frameborder="0"></iframe>
     </div>
 
     <div id="popup">
@@ -84,6 +88,19 @@
 
             popup.style.transform = `translateY(-100%)`;
             //selectedImage.src = '';
+        })
+
+        //TEXT POPUP
+        const textLink = document.getElementById('textLink');
+        const textPopup = document.getElementById('textPopup');
+        
+        textLink.addEventListener('click', () =>{
+            textPopup.style.transform = `translateY(0)`;
+        })
+
+        textPopup.addEventListener('click', () =>{
+
+            textPopup.style.transform = `translateY(-100%)`;
         })
     </script>
     
