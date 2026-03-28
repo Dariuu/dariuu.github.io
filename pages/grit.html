@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="styles/portofolio.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1023px)" href="mobile-style/portofolio.css">
+    <link rel="shortcut icon" href="/media/ico PRE GRIT.png" type="image/x-icon">
+    <title>Dariuu - GRIT</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header-desktop">
+        <div>
+            <a href="/index.html">HOME</a>
+            <hr style="width:80%; height:1px; background-color:white; border: 1px solid #ffffff">
+            <img id="dariuulogo" src="/media/Dariuu Grit small.png" alt="dariuu logo">
+            <hr style="width:80%; height:1px; background-color:white; border: 1px solid #ffffff">
+            <a href="./about.html">ABOUT</a>
+        </div>
+          
+      </header>
+
+    <!-- MOBILE HEADER -->
+    <header id="header-mobile">
+        <img id="dariuulogo" src="/media/Dariuu Grit small.png" alt="dariuu logo">
+    </header>
+
+    <div id="back">
+        <a href="./portfolio.html">&#8617; BACK TO PORTFOLIO</a>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div id="content">
+        <!-- TITLE BLOCK -->
+        <div id="title">
+            <p>GRIT</p>
+            <div id="block"><p>PORTFOLIO</p></div>
+        </div>
+
+        <div id="collection">
+            <div id="info">
+                <h1>GRIT</h1>
+                <p>2024 - 2025</p>
+                <p>Music - Personal Project</p>
+                <p>GRIT is a rock album that i made over the span of 2 years about my new life, in a new city, with new friends and how all of this change affected how I perceived myself.</p>
+            </div>
+            <div id="gallery">
+                
+            </div>
+        </div>
+        <div id="music">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EmmmZHhvVA0?si=fDmwPMr-AlgZUAAv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hp3wY2fl8a0?si=YLHYsESr5fw1-ZjF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rJ638jjQh8Q?si=IFQBwBtabr5x5L7b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3bbvwwQpmqYAkm2sgnFXwN?utm_source=generator" width="560px" height="315px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        
+    </div>
+
+    <div id="popup">
+        <img src="" alt="" id="selectedImage">
+    </div>
+
+    <div style="height: 100px;"></div>
+    
+    <script>
+        //thank you James Q Quick on Youtube<3
+        const gallery = document.getElementById('gallery');
+        const popup = document.getElementById('popup');
+        const selectedImage = document.getElementById('selectedImage');
+        const imageIndexes = [1,2,3,4,5,6,7,8,9,10,11];
+        const selectedIndex = null;
+
+        imageIndexes.forEach((i) => {
+            const image = document.createElement('img');
+            image.src = `/media/grit/grit (${i}).jpg`;
+            image.classList.add('galleryImg');
+
+            image.addEventListener('click', () =>{
+                popup.style.transform = `translateY(0)`;
+                selectedImage.src = `/media/grit/grit (${i}).jpg`;
+            })
+
+            gallery.appendChild(image);
+        })
+
+        popup.addEventListener('click', () =>{
+
+            popup.style.transform = `translateY(-100%)`;
+            //selectedImage.src = '';
+        })
+    </script>
+    
+</body>
+</html>

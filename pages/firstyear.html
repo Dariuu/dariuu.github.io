@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (min-device-width: 1024px)" href="styles/portofolio.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 1023px)" href="mobile-style/portofolio.css">
+    <link rel="shortcut icon" href="/media/ico PRE GRIT.png" type="image/x-icon">
+    <title>Dariuu - Year ONE</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header-desktop">
+        <div>
+            <a href="/index.html">HOME</a>
+            <hr style="width:80%; height:1px; background-color:white; border: 1px solid #ffffff">
+            <img id="dariuulogo" src="/media/Dariuu Grit small.png" alt="dariuu logo">
+            <hr style="width:80%; height:1px; background-color:white; border: 1px solid #ffffff">
+            <a href="./about.html">ABOUT</a>
+        </div>
+          
+      </header>
+
+    <!-- MOBILE HEADER -->
+    <header id="header-mobile">
+        <img id="dariuulogo" src="/media/Dariuu Grit small.png" alt="dariuu logo">
+    </header>
+
+    <div id="back">
+        <a href="./portfolio.html">&#8617; BACK TO PORTFOLIO</a>
+    </div>
+
+    <!-- PAGE CONTENT -->
+    <div id="content">
+        <!-- TITLE BLOCK -->
+        <div id="title">
+            <p>Year ONE</p>
+            <div id="block"><p>PORTFOLIO</p></div>
+        </div>
+
+        <div id="collection">
+            <div id="info">
+                <h1>Year ONE</h1>
+                <p>2024 - 2025</p>
+                <p>UNArte - Year 1</p>
+                <p>Most of the things I made in my first year @unarte. <br>Mostly studies.</p>
+            </div>
+            <div id="gallery">
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="popup">
+        <img src="" alt="" id="selectedImage">
+    </div>
+
+    <div style="height: 100px;"></div>
+    
+    <script>
+        //thank you James Q Quick on Youtube<3
+        const gallery = document.getElementById('gallery');
+        const popup = document.getElementById('popup');
+        const selectedImage = document.getElementById('selectedImage');
+        const imageIndexes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        const selectedIndex = null;
+
+        imageIndexes.forEach((i) => {
+            const image = document.createElement('img');
+            image.src = `/media/first/first (${i}).jpg`;
+            image.classList.add('galleryImg');
+
+            image.addEventListener('click', () =>{
+                popup.style.transform = `translateY(0)`;
+                selectedImage.src = `/media/first/first (${i}).jpg`;
+            })
+
+            gallery.appendChild(image);
+        })
+
+        popup.addEventListener('click', () =>{
+
+            popup.style.transform = `translateY(-100%)`;
+            //selectedImage.src = '';
+        })
+    </script>
+    
+</body>
+</html>
