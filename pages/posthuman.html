@@ -28,7 +28,7 @@
     </header>
 
     <div id="back">
-        <a href="./portfolio.html">🢀 BACK TO PORTFOLIO</a>
+        <a href="./portfolio.html">&#8617; BACK TO PORTFOLIO</a>
     </div>
 
     <!-- PAGE CONTENT -->
@@ -46,78 +46,46 @@
                 <p>UNArte - Year 2 Semester 2</p>
                 <p>For this project I decided to approach the future. <br> How will the human evolve? <br> Will we merge with our technology? <br>  And how will that affect our way of living?</p>
             </div>
-            <div id="art">
-                <img src="/media/posthuman/Colaj1culoare.png" alt="">
+            <div id="gallery">
+
             </div>
-            <div id="art">
-                <img src="/media/posthuman/Colaj2culoare.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/Colaj3culoare.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/miku color.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/DeCONSTRUCTed between color.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/TECHwarriorWOMAN color.png" alt="">
-            </div>
-            
-            
-            <div id="art">
-                <img src="/media/posthuman/will u give up.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/join the network.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/machine with flesh.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/edit2.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/edit3.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/world1.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/world2.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/world3.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/COMP.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/Pattern1.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/pattern11.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/pattern5.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/pattern7.png" alt="">
-            </div>
-            <div id="art">
-                <img src="/media/posthuman/POSThuman Playlist.png" alt="">
-            </div>
-            
-            
-            
-            
         </div>
 
     </div>
 
-    <div style="height: 100px;"></div>
+    <div id="popup">
+        <img src="" alt="" id="selectedImage">
+    </div>
 
+    <div style="height: 100px;"></div>
+    
+    <script>
+        //thank you James Q Quick on Youtube<3
+        const gallery = document.getElementById('gallery');
+        const popup = document.getElementById('popup');
+        const selectedImage = document.getElementById('selectedImage');
+        const imageIndexes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+        const selectedIndex = null;
+
+        imageIndexes.forEach((i) => {
+            const image = document.createElement('img');
+            image.src = `/media/posthuman/posthuman-${i}.jpg`;
+            image.classList.add('galleryImg');
+
+            image.addEventListener('click', () =>{
+                popup.style.transform = `translateY(0)`;
+                selectedImage.src = `/media/posthuman/posthuman-${i}.jpg`;
+            })
+
+            gallery.appendChild(image);
+        })
+
+        popup.addEventListener('click', () =>{
+
+            popup.style.transform = `translateY(-100%)`;
+            //selectedImage.src = '';
+        })
+    </script>
     
 </body>
 </html>

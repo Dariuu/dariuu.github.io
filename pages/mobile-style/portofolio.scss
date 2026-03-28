@@ -1,7 +1,7 @@
 
 body{
     background-color: rgb(45, 45, 45);
-    background-image: url(/media/background-repeat.png);
+    background-image: url(/media/background-repeat.jpg);
     background-repeat: repeat;
     background-size: 30%;
     margin: 0;
@@ -43,6 +43,7 @@ body{
         margin: auto;
     }
     a{
+        text-decoration: none;
         color: white;
         margin: auto;
         font-size: 24px;
@@ -66,6 +67,7 @@ body{
     font-size: 30px;
     padding: 10px;
     a{
+        text-decoration: none;
         color: white;
     }
 }
@@ -107,6 +109,11 @@ body{
         margin: 20px;
         background: rgba(0, 0, 0, 0.24);
         backdrop-filter: blur(5px);
+        border-style: ridge;
+        border-radius: 0px;
+        border-width: 0px;
+        border-color: rgba(255, 123, 0, 0.486);
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -138,32 +145,64 @@ body{
         p{
             font-size: 18px;
         }
+        transition: backdrop-filter 0.1s;
+    }
+    #project:hover{
+        transition: backdrop-filter 0.5s;
+        background: rgba(104, 45, 0, 0.24);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        border-width: 2px;
     }
 
     #collection{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+        text-align: center;
+        display: grid;
+        grid-auto-flow: row;
         width: 100vw;
         padding: 15px;
         #info{
             margin: 10px;
         }
-        #art{
-
-            img{
-                -webkit-user-drag: none; 
+        #gallery{
+            .galleryImg{
+                width: 40vw;
                 margin: 10px;
-            //object-fit: contain;
-            width: 80vw;
-            height: auto;
-            //aspect-ratio: 1;
-            }       
+                border-style: solid;
+                border-width: 0px;
+                border-color: rgb(255, 123, 0);
+                transition: border-width 0.1s;
+            }
+            .galleryImg:hover{
+                border-width: 2px;
+                transition: border-width 0.1s;
+            }
         }
         
     }
 }
+
+#popup{
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 250ms transform;
+    //padding: 50px;
+}
+
+#selectedImage{
+    max-width: 90%;
+}
+
 #linkscontainer{
     color: #ffffff;
     width: fit-content;
