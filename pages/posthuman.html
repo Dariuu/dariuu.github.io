@@ -46,15 +46,25 @@
                 <p>UNArte - Year 2 Semester 2</p>
                 <p>For this project I decided to approach the future. <br> How will the human evolve? <br> Will we merge with our technology? <br>  And how will that affect our way of living?</p>
             </div>
+            <div id="music">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RdQtke2ubaQ?si=Isa7qCYH5sFCTxTR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <div id="gallery">
                 <img id="textLink" src="/media/txtFile.png" alt="">
+                <!-- <img class="pdfLink" id="pdf1" src="/media/pdfFile.png" alt="">
+                <img class="pdfLink" id="pdf2" src="/media/pdfFile.png" alt=""> -->
             </div>
         </div>
 
     </div>
     
+
     <div id="textPopup">
         <iframe src="/pages/posthuman-text.html" frameborder="0"></iframe>
+    </div>
+
+    <div id="PDFpopup">
+        <embed src= "" id="selectedPDF">
     </div>
 
     <div id="popup">
@@ -65,10 +75,39 @@
     
     <script>
         //thank you James Q Quick on Youtube<3
+
+        
+
         const gallery = document.getElementById('gallery');
+
+        //PDF
+        const PDFpopup = document.getElementById('PDFpopup');
+        const selectedPDF = document.getElementById('selectedPDF');
+        const pdfIndexes = [1,2];
+        const selectedPdfIndex = null;
+
+        pdfIndexes.forEach((i) => {
+            const pdf = document.createElement('img');
+            pdf.src = `/media/posthuman/pdf${i}.png`;
+            pdf.classList.add('pdfLink');
+
+            pdf.addEventListener('click', () =>{
+                PDFpopup.style.transform = `translateY(0)`;
+                selectedPDF.src = `/media/posthuman/pdf-(${i}).pdf`;
+            })
+
+            gallery.appendChild(pdf);
+        })
+
+        PDFpopup.addEventListener('click', () =>{
+
+            PDFpopup.style.transform = `translateY(-100%)`;
+            //selectedImage.src = '';
+        })
+
         const popup = document.getElementById('popup');
         const selectedImage = document.getElementById('selectedImage');
-        const imageIndexes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+        const imageIndexes = [-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38];
         const selectedIndex = null;
 
         imageIndexes.forEach((i) => {
@@ -102,6 +141,8 @@
 
             textPopup.style.transform = `translateY(-100%)`;
         })
+
+        
     </script>
     
 </body>
