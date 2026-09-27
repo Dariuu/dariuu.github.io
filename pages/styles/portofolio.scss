@@ -159,12 +159,13 @@ body{
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        width: fit-content;
+        width: 28vw;
         padding: 15px;
 
 
         #info{
             margin: 10px;
+            text-wrap: pretty;
         }
         #art{
 

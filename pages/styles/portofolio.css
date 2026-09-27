@@ -155,12 +155,12 @@ body {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 28vw;
   padding: 15px;
 }
 #content #project #info {
   margin: 10px;
+  text-wrap: pretty;
 }
 #content #project #art {
   text-align: center;
